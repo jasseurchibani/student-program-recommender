@@ -1,0 +1,601 @@
+user_id,interests,interests_text,num_interests,math_grade,science_grade,language_grade,overall_grade
+0,"['anthropology', 'health policy', 'foreign policy']",anthropology  health policy  foreign policy,3,80.96,73.34,82.77,79.02
+1,"['corporate bond', 'child', 'solar energy', 'c programming']",corporate bond  child  solar energy  c programming,4,93.28,72.19,72.19,79.22
+2,"['partnership', 'arbitration', 'approximation', 'case study', 'ethics', 'finance', 'renewable energy']",partnership  arbitration  approximation  case study  ethics  finance  renewable energy,7,93.95,84.21,69.37,82.51
+3,"['apache', 'statistical inference', 'electronics', 'solar energy', 'pandas', 'evaluation', 'political science']",apache  statistical inference  electronics  solar energy  pandas  evaluation  political science,7,81.51,69.44,69.41,73.45
+4,"['history', 'accuracy and precision', 'data science', 'partnership', 'lesson plan', 'data analysis data-science data-analysis', 'essay writing']",history  accuracy and precision  data science  partnership  lesson plan  data analysis data-science data-analysis  essay writing,7,77.9,52.04,54.3,61.42
+5,"['child', 'career', 'mergers & acquisitions', 'change management', 'market segmentation']",child  career  mergers & acquisitions  change management  market segmentation,5,68.25,62.85,78.77,69.96
+6,"['training', 'grammar', 'augmented assignment', 'probability density function', 'social media marketing']",training  grammar  augmented assignment  probability density function  social media marketing,5,64.1,58.05,92.59,71.58
+7,"['memory', 'business communication', 'speech']",memory  business communication  speech,3,72.29,75.81,57.9,68.67
+8,"['virtual machine', 'user interface design', 'marketing plan', 'switches', 'economy']",virtual machine  user interface design  marketing plan  switches  economy,5,68.47,76.33,61.19,68.66
+9,"['authentication', 'facilitation', 'identity management']",authentication  facilitation  identity management,3,79.51,67.79,71.5,72.93
+10,"['finance', 'chi-squared distribution', 'mergers & acquisitions']",finance  chi-squared distribution  mergers & acquisitions,3,67.78,97.23,74.84,79.95
+11,"['presentation', 'web development', 'materials', 'data type', 'matrices']",presentation  web development  materials  data type  matrices,5,62.31,84.87,60.35,69.18
+12,"['english grammar', 'gratitude', 'brand management', 'type i and type ii errors', 'web development']",english grammar  gratitude  brand management  type i and type ii errors  web development,5,77.51,51.48,59.06,62.68
+13,"['six sigma', 'foreign policy', 'data visualization', 'process management']",six sigma  foreign policy  data visualization  process management,4,77.36,83.86,77.06,79.43
+14,"['hashing', 'stack (abstract data type)', ""euler's totient function"", 'journalism', 'behavioral economics', 'family']",hashing  stack (abstract data type)  euler's totient function  journalism  behavioral economics  family,6,73.61,71.39,57.26,67.42
+15,"['inventory', 'null coalescing operator', 'guitar']",inventory  null coalescing operator  guitar,3,66.36,69.47,87.69,74.51
+16,"['entrepreneurship', 'strategic thinking', 'interview']",entrepreneurship  strategic thinking  interview,3,79.12,53.84,78.89,70.62
+17,"['regression analysis', 'negotiation', 'probability', 'creative writing']",regression analysis  negotiation  probability  creative writing,4,70.38,66.88,82.34,73.2
+18,"['corporate bond', 'front and back ends', 'statistical inference', 'social psychology', 'gradient']",corporate bond  front and back ends  statistical inference  social psychology  gradient,5,87.37,86.18,64.93,79.49
+19,"['peering', 'tailored access operations', 'news', 'marketing plan', ""euler's totient function"", 'copywriting', 'risk']",peering  tailored access operations  news  marketing plan  euler's totient function  copywriting  risk,7,71.29,78.98,86.71,78.99
+20,"['cancer', 'autocad', 'clinical study design', 'customer experience', 'video game development', 'data science']",cancer  autocad  clinical study design  customer experience  video game development  data science,6,69.25,72.77,61.72,67.92
+21,"['theory of relativity', 'biology', 'mobile app', 'methodology', 'project data-science data-analysis', 'security management']",theory of relativity  biology  mobile app  methodology  project data-science data-analysis  security management,6,60.65,84.75,91.27,78.89
+22,"['sports', 'advertising', 'cloud storage', 'social media marketing', 'gratitude']",sports  advertising  cloud storage  social media marketing  gratitude,5,74.14,87.04,79.34,80.17
+23,"['cloud computing security', 'infection', 'personal advertisement', 'data mining', 'presentation']",cloud computing security  infection  personal advertisement  data mining  presentation,5,67.26,79.34,93.46,80.02
+24,"['gradient', 'reinforcement learning', 'digital signature']",gradient  reinforcement learning  digital signature,3,74.57,93.78,43.56,70.64
+25,"['cipher', 'version control', 'information security', 'writing', 'research methods', 'type i and type ii errors', 'electronics']",cipher  version control  information security  writing  research methods  type i and type ii errors  electronics,7,84.86,76.04,71.41,77.44
+26,"['mechanical design', 'data structures', 'social work', 'semantics']",mechanical design  data structures  social work  semantics,4,76.1,51.15,72.36,66.54
+27,"['time management', 'javascript', 'r&d management']",time management  javascript  r&d management,3,79.29,92.73,68.78,80.27
+28,"['cloud computing security', 'marketing strategy', 'interest']",cloud computing security  marketing strategy  interest,3,65.3,68.98,85.98,73.42
+29,"['bias', 'fluid mechanics', 'strategic thinking', 'business communication']",bias  fluid mechanics  strategic thinking  business communication,4,78.95,68.64,81.16,76.25
+30,"['qualitative research', 'bookkeeping', 'simulation']",qualitative research  bookkeeping  simulation,3,76.16,86.62,66.58,76.45
+31,"['computer programming computer-science software-development', 'psychologies', 'sound design', 'dataflow']",computer programming computer-science software-development  psychologies  sound design  dataflow,4,71.07,70.29,57.44,66.27
+32,"['security', 'trigonometric integral', 'path (variable)', 'entrepreneurship', 'social work']",security  trigonometric integral  path (variable)  entrepreneurship  social work,5,78.55,78.13,75.06,77.25
+33,"['internet', 'news', 'mechanical design', 'phenomenon']",internet  news  mechanical design  phenomenon,4,72.18,58.02,69.95,66.72
+34,"['predictive analytics', 'competitiveness', 'fundraising', 'experimental design', 'biology', 'leadership development', 'android development']",predictive analytics  competitiveness  fundraising  experimental design  biology  leadership development  android development,7,70.89,65.37,73.06,69.77
+35,"['spreadsheet', 'feature engineering', 'team management', 'evaluation', 'acoustics', 'brand', 'war']",spreadsheet  feature engineering  team management  evaluation  acoustics  brand  war,7,79.85,97.63,77.09,84.86
+36,"['family', 'booking', 'arbitration']",family  booking  arbitration,3,78.09,74.11,51.97,68.06
+37,"['brand', 'rstudio', 'fintech', 'html', 'qualitative research']",brand  rstudio  fintech  html  qualitative research,5,74.68,75.72,100.0,83.47
+38,"['social work', 'conflict resolution', 'studentized residual', 'swift programming']",social work  conflict resolution  studentized residual  swift programming,4,72.69,78.62,74.58,75.3
+39,"['food security', 'proposition', 'object-oriented programming', 'ecology', 'cash flow', 'change management']",food security  proposition  object-oriented programming  ecology  cash flow  change management,6,60.98,88.71,84.02,77.9
+40,"['map', 'path (variable)', 'openfabrics alliance', 'project', 'beam robotics', 'chart']",map  path (variable)  openfabrics alliance  project  beam robotics  chart,6,84.49,64.09,91.83,80.14
+41,"['numpy', 'lecture', 'climate change']",numpy  lecture  climate change,3,58.18,82.04,100.0,80.07
+42,"['economy', 'ecology', 'social media marketing', 'political science']",economy  ecology  social media marketing  political science,4,63.11,68.2,76.2,69.17
+43,"['partnership', 'dna', 'html', 'process management']",partnership  dna  html  process management,4,68.96,56.39,75.82,67.06
+44,"['business analysis', 'physiology', 'sources', 'chart']",business analysis  physiology  sources  chart,4,62.25,80.68,63.97,68.97
+45,"['sociology', 'agriculture', 'case study']",sociology  agriculture  case study,3,93.6,65.6,71.14,76.78
+46,"['death', 'object-oriented programming', 'qualitative research', 'python libraries']",death  object-oriented programming  qualitative research  python libraries,4,84.76,60.23,77.73,74.24
+47,"['null coalescing operator', 'bible', 'databases', 'mental health']",null coalescing operator  bible  databases  mental health,4,90.69,55.71,77.22,74.54
+48,"['mongodb', 'graphic design', 'prevention']",mongodb  graphic design  prevention,3,78.12,84.38,60.16,74.22
+49,"['path (variable)', 'sql', 'quantum mechanics', 'data analysis', 'ecology']",path (variable)  sql  quantum mechanics  data analysis  ecology,5,59.15,81.26,78.56,72.99
+50,"['ethereum', 'bias', 'syntax', 'software development process', 'bigquery']",ethereum  bias  syntax  software development process  bigquery,5,78.01,79.16,66.84,74.67
+51,"['benefits', 'awareness', 'target audience', 'public health', 'relative change and difference']",benefits  awareness  target audience  public health  relative change and difference,5,77.79,78.52,66.43,74.24
+52,"['data mining', 'benefits', 'resource', 'business law', 'download', 'bookkeeping', 'test set']",data mining  benefits  resource  business law  download  bookkeeping  test set,7,97.39,80.69,60.7,79.59
+53,"['financial accounting', 'nursing', 'communication']",financial accounting  nursing  communication,3,82.88,63.3,84.45,76.88
+54,"['front and back ends', 'symptoms', 'test case', 'asset', 'user research', 'business model canvas', 'pandas']",front and back ends  symptoms  test case  asset  user research  business model canvas  pandas,7,88.9,65.15,86.56,80.21
+55,"['strategic management', 'scaling', 'inventory', 'global', 'empathy', 'interpretation', 'flask']",strategic management  scaling  inventory  global  empathy  interpretation  flask,7,79.95,84.86,97.76,87.53
+56,"['negotiation', 'confidence', 'instructional design', 'privacy', 'inventory']",negotiation  confidence  instructional design  privacy  inventory,5,72.06,65.96,64.33,67.45
+57,"['adaptation', 'probability', 'utility']",adaptation  probability  utility,3,65.21,74.07,79.09,72.79
+58,"['chemistry', 'budget', 'social network', 'epidemic', 'representational state transfer', 'graphic design', 'conflict resolution']",chemistry  budget  social network  epidemic  representational state transfer  graphic design  conflict resolution,7,78.32,84.93,75.16,79.47
+59,"['bookkeeping', 'foreign policy', 'matplotlib', 'humanitarian', 'data mining']",bookkeeping  foreign policy  matplotlib  humanitarian  data mining,5,92.44,71.82,100.0,88.09
+60,"['software engineering', 'intellectual', 'unix shells', 'security management', 'active listening', 'spreadsheet']",software engineering  intellectual  unix shells  security management  active listening  spreadsheet,6,82.51,64.71,62.15,69.79
+61,"['choice', 'consumer behaviour', 'grammar', 'cluster analysis', 'circular economy']",choice  consumer behaviour  grammar  cluster analysis  circular economy,5,80.79,72.32,83.57,78.89
+62,"['data analysis data-science data-analysis', 'health', 'human learning', 'training and development', 'english language', 'linearity', 'emotions']",data analysis data-science data-analysis  health  human learning  training and development  english language  linearity  emotions,7,80.68,74.13,64.84,73.21
+63,"['renewable energy', 'r&d management', 'gene', 'balance sheet', 'career']",renewable energy  r&d management  gene  balance sheet  career,5,56.82,69.64,85.28,70.58
+64,"['healthcare management', 'augmented reality', '3d printing', 'latex', 'computer-aided design', 'web service']",healthcare management  augmented reality  3d printing  latex  computer-aided design  web service,6,77.57,60.05,77.08,71.57
+65,"['data structures', 'physics', 'specification (technical standard)', 'peer review', 'statistical inference']",data structures  physics  specification (technical standard)  peer review  statistical inference,5,79.62,64.39,76.84,73.62
+66,"['cloud computing security', 'business analysis', 'cryptocurrency']",cloud computing security  business analysis  cryptocurrency,3,75.7,61.28,79.29,72.09
+67,"['arrays', 'matplotlib', 'tableau software', 'speech', 'cross-cultural communication', 'perception', 'computer programming']",arrays  matplotlib  tableau software  speech  cross-cultural communication  perception  computer programming,7,81.73,88.0,87.65,85.79
+68,"['interfaces', 'materials', 'asset']",interfaces  materials  asset,3,58.47,63.75,81.18,67.8
+69,"['english language', 'game design', 'chinese language', 'map', 'statistical hypothesis testing']",english language  game design  chinese language  map  statistical hypothesis testing,5,81.17,81.18,100.0,87.45
+70,"['user story', 'data analysis', 'financial statement', 'data type', 'digital marketing', 'operations management']",user story  data analysis  financial statement  data type  digital marketing  operations management,6,81.85,88.63,86.45,85.64
+71,"['disaster', 'language learning', 'operating systems']",disaster  language learning  operating systems,3,82.82,71.22,84.11,79.38
+72,"['gratitude', 'data science', 'civil engineering', 'microsoft excel']",gratitude  data science  civil engineering  microsoft excel,4,65.73,72.16,69.18,69.02
+73,"['project mine', 'exercise', 'email']",project mine  exercise  email,3,75.98,100.0,52.59,76.19
+74,"['long short-term memory', 'interaction design', 'facilitation', 'experience', 'animal', 'ecosystem']",long short-term memory  interaction design  facilitation  experience  animal  ecosystem,6,83.24,55.65,69.34,69.41
+75,"['korean language', 'html', 'brainstorming', 'machine learning', 'risk', 'node.js']",korean language  html  brainstorming  machine learning  risk  node.js,6,88.07,75.77,62.07,75.3
+76,"['language', 'apache spark', 'cluster analysis', 'global', 'digital signature', 'systems design', 'graphic design']",language  apache spark  cluster analysis  global  digital signature  systems design  graphic design,7,66.42,83.16,66.24,71.94
+77,"['climate change', 'theory of relativity', 'persona (user experience)']",climate change  theory of relativity  persona (user experience),3,77.6,75.55,67.18,73.44
+78,"['interpretation', 'personal branding', 'translation', 'risk factors', 'cluster analysis']",interpretation  personal branding  translation  risk factors  cluster analysis,5,100.0,82.61,50.7,77.77
+79,"['swift programming', 'ecology', 'genetics', 'augmented reality', 'personal branding', '.properties']",swift programming  ecology  genetics  augmented reality  personal branding  .properties,6,77.24,67.06,85.23,76.51
+80,"['social psychology', 'educational psychology', 'matching', 'performance', 'brainstorming', 'lambda calculus', 'venture capital']",social psychology  educational psychology  matching  performance  brainstorming  lambda calculus  venture capital,7,65.49,73.62,81.06,73.39
+81,"['computer architecture', 'instructional design', 'research methods', 'internality', 'online learning']",computer architecture  instructional design  research methods  internality  online learning,5,85.39,60.6,70.99,72.32
+82,"['numpy', 'inflation', 'spreadsheet', 'computer programming', 'economy']",numpy  inflation  spreadsheet  computer programming  economy,5,69.3,67.16,96.19,77.55
+83,"['mental health', 'design pattern', 'user (computing)', 'stress', 'integral', 'object detection']",mental health  design pattern  user (computing)  stress  integral  object detection,6,79.86,59.87,86.01,75.25
+84,"['.bit', 'interact', 'hypothesis', 'english language', 'perception', 'syntax', 'trigonometric integral']",.bit  interact  hypothesis  english language  perception  syntax  trigonometric integral,7,100.0,87.39,56.77,81.39
+85,"['product management', 'physics', 'epidemic', 'risk factors', 'proposition']",product management  physics  epidemic  risk factors  proposition,5,69.19,90.2,66.51,75.3
+86,"['business strategy', 'human voice', 'running', 'web application']",business strategy  human voice  running  web application,4,80.33,84.3,63.88,76.17
+87,"['leadership', 'case study', 'financial accounting', 'international law', 'experimental design', 'electronics', 'critical thinking']",leadership  case study  financial accounting  international law  experimental design  electronics  critical thinking,7,74.29,40.0,62.71,59.0
+88,"['authority', 'foreign policy', 'psychologies']",authority  foreign policy  psychologies,3,71.97,60.03,94.59,75.53
+89,"['breach (security exploit)', 'pricing', 'ordered pair', 'virtual reality', 'sustainable business', 'editing', 'missing data']",breach (security exploit)  pricing  ordered pair  virtual reality  sustainable business  editing  missing data,7,57.84,69.72,76.57,68.04
+90,"['node.js', 'forecasting', 'cross-cultural communication', 'accounting', 'circular economy', 'payments']",node.js  forecasting  cross-cultural communication  accounting  circular economy  payments,6,92.3,57.77,88.96,79.67
+91,"['dialogue', 'sales', 'product development', 'awareness']",dialogue  sales  product development  awareness,4,75.12,63.22,80.55,72.96
+92,"['game design', 'compiler', 'principle', 'constitution', 'product development', 'semantics', 'statistical classification']",game design  compiler  principle  constitution  product development  semantics  statistical classification,7,77.39,67.8,75.84,73.67
+93,"['investment', 'physiology', 'urban planning', 'rendering (computer graphics)', 'pedagogy', 'sound', 'plant']",investment  physiology  urban planning  rendering (computer graphics)  pedagogy  sound  plant,7,70.38,76.36,82.95,76.56
+94,"['psychologies', 'population', 'ggplot2', 'fundraising']",psychologies  population  ggplot2  fundraising,4,94.03,60.15,100.0,84.73
+95,"['sap erp', 'pytorch', 'video editing', 'flask', 'health policy']",sap erp  pytorch  video editing  flask  health policy,5,51.57,73.18,82.06,68.94
+96,"['business case', 'hyperparameter', 'financial accounting', 'health', 'leadership', 'japanese language']",business case  hyperparameter  financial accounting  health  leadership  japanese language,6,78.37,67.53,72.5,72.8
+97,"['business law', 'copywriting', 'css', 'file shortcut', 'mindfulness', 'customer experience', 'epidemiology']",business law  copywriting  css  file shortcut  mindfulness  customer experience  epidemiology,7,69.08,67.93,85.2,74.07
+98,"['ordered pair', 'observation', 'lambda calculus']",ordered pair  observation  lambda calculus,3,79.28,66.69,85.8,77.25
+99,"['professional development', 'organizational culture', 'biodiversity', 'enabling', 'parent', 'molecular biology', 'target audience']",professional development  organizational culture  biodiversity  enabling  parent  molecular biology  target audience,7,78.69,84.75,82.56,82.0
+100,"['sustainable business', 'mergers & acquisitions', 'public health']",sustainable business  mergers & acquisitions  public health,3,65.05,68.28,83.97,72.43
+101,"['machine learning data-science machine-learning', 'information security', 'mongodb']",machine learning data-science machine-learning  information security  mongodb,3,82.32,74.75,76.41,77.83
+102,"['social psychology', 'solar systems', 'trading', 'evaluation', 'r programming', ""euler's totient function""]",social psychology  solar systems  trading  evaluation  r programming  euler's totient function,6,90.33,67.9,81.57,79.93
+103,"['personal branding', 'qualitative research', 'application programming interfaces', 'molecular biology', 'leadership and management']",personal branding  qualitative research  application programming interfaces  molecular biology  leadership and management,5,72.57,72.39,88.19,77.72
+104,"['dataflow', 'project', 'computer programming', 'value proposition', 'six sigma', 'apache']",dataflow  project  computer programming  value proposition  six sigma  apache,6,84.9,84.76,90.67,86.78
+105,"['terrorism', 'storytelling', 'apache', 'business process', 'peering', 'continuous function']",terrorism  storytelling  apache  business process  peering  continuous function,6,75.25,83.18,71.28,76.57
+106,"['distributed computing', 'awareness', 'github', 'mental health', 'keras', 'entrepreneurship']",distributed computing  awareness  github  mental health  keras  entrepreneurship,6,78.89,73.44,76.16,76.16
+107,"['justice', 'leadership and management business leadership-and-management', 'mental health', 'history', 'parenting', 'general statistics']",justice  leadership and management business leadership-and-management  mental health  history  parenting  general statistics,6,82.14,65.18,100.0,82.44
+108,"['project mine', 'analytics', 'social work']",project mine  analytics  social work,3,62.93,60.43,88.9,70.75
+109,"['long short-term memory', 'experiment', 'bookkeeping']",long short-term memory  experiment  bookkeeping,3,84.5,82.49,82.54,83.18
+110,"['approximation error', 'fundraising', 'email']",approximation error  fundraising  email,3,74.85,64.23,75.91,71.67
+111,"['utility', 'customer experience', 'flask']",utility  customer experience  flask,3,66.87,86.7,73.24,75.6
+112,"['proposition', 'cloud storage', 'storytelling', 'ethics']",proposition  cloud storage  storytelling  ethics,4,65.09,71.14,79.96,72.06
+113,"['geographic information system', 'matlab', 'debugging', 'translation', 'trigonometric integral', 'cloud storage']",geographic information system  matlab  debugging  translation  trigonometric integral  cloud storage,6,68.24,65.13,77.92,70.43
+114,"['international relations', 'civil engineering', 'symptoms', 'anxiety']",international relations  civil engineering  symptoms  anxiety,4,77.94,68.92,69.35,72.07
+115,"['sustainable business', 'media market', 'network security', 'electronics', 'business analysis']",sustainable business  media market  network security  electronics  business analysis,5,77.78,57.62,58.11,64.51
+116,"['video game development', 'food security', 'child', 'integral', 'time series', 'competitiveness', 'strategic planning']",video game development  food security  child  integral  time series  competitiveness  strategic planning,7,66.38,72.44,78.73,72.52
+117,"['logic', 'simulation', 'peering']",logic  simulation  peering,3,92.7,85.29,73.08,83.69
+118,"['bookkeeping', 'representational state transfer', 'linear model', 'aerospace engineering', 'parent']",bookkeeping  representational state transfer  linear model  aerospace engineering  parent,5,74.77,62.97,74.78,70.84
+119,"['cipher', 'permutations', 'marketing plan', 'web development', 'probability density function', 'customer experience']",cipher  permutations  marketing plan  web development  probability density function  customer experience,6,71.54,78.87,65.07,71.83
+120,"['dialogue', 'saving', 'hashing', 'user (computing)', 'social psychology', 'python syntax and semantics']",dialogue  saving  hashing  user (computing)  social psychology  python syntax and semantics,6,81.23,93.39,73.69,82.77
+121,"['personal branding', 'terrorism', 'guitar', 'java programming', 'framing', 'c dynamic memory allocation']",personal branding  terrorism  guitar  java programming  framing  c dynamic memory allocation,6,79.82,83.28,70.19,77.76
+122,"['power electronics', 'forecasting', 'product development', ""student's t-distribution"", 'unit testing']",power electronics  forecasting  product development  student's t-distribution  unit testing,5,77.69,75.15,76.17,76.34
+123,"['leadership and management', 'application programming interfaces', 'recruitment', 'journalism', 'distributed computing', 'r programming']",leadership and management  application programming interfaces  recruitment  journalism  distributed computing  r programming,6,65.72,75.29,80.98,74.0
+124,"['mapping', 'geometry', 'lesson plan', 'html5']",mapping  geometry  lesson plan  html5,4,92.41,86.51,100.0,92.97
+125,"['health system', 'sql', 'adobe photoshop', 'safety', 'economics', 'business writing', 'food science']",health system  sql  adobe photoshop  safety  economics  business writing  food science,7,65.79,85.47,77.2,76.15
+126,"['r&d management', 'spreadsheet software', 'fluid mechanics', 'psychology', 'randomness', 'poetry writing']",r&d management  spreadsheet software  fluid mechanics  psychology  randomness  poetry writing,6,100.0,65.3,64.92,76.74
+127,"['case study', 'inference', 'evolution']",case study  inference  evolution,3,67.81,49.51,68.69,62.0
+128,"['forecasting', 'interactivity', 'systems thinking', 'matlab', 'proposition', 'sports']",forecasting  interactivity  systems thinking  matlab  proposition  sports,6,65.89,76.8,79.1,73.93
+129,"['linguistics', 'payments', 'sources', 'lambda calculus', 'machine learning data-science machine-learning', 'presentation', 'healing']",linguistics  payments  sources  lambda calculus  machine learning data-science machine-learning  presentation  healing,7,97.51,86.41,68.08,84.0
+130,"['gene', 'file shortcut', 'competitiveness', 'ecosystem', 'inventory']",gene  file shortcut  competitiveness  ecosystem  inventory,5,64.22,80.9,59.16,68.09
+131,"['social media', 'documents', 'economy']",social media  documents  economy,3,96.98,89.15,69.37,85.17
+132,"['python syntax and semantics', 'healthcare management', 'technology strategy', 'scikit-learn']",python syntax and semantics  healthcare management  technology strategy  scikit-learn,4,54.44,91.25,73.63,73.1
+133,"['human resources', 'chemistry', 'ecosystems', 'influencing', 'externality', 'marketing mix', 'disaster']",human resources  chemistry  ecosystems  influencing  externality  marketing mix  disaster,7,89.85,55.87,67.81,71.18
+134,"['agile software development', 'six sigma', 'computer program', 'health informatics', 'authentication']",agile software development  six sigma  computer program  health informatics  authentication,5,75.06,75.56,69.6,73.41
+135,"['sports', 'income', 'computer program']",sports  income  computer program,3,82.47,62.19,73.29,72.65
+136,"['chinese language', 'aerospace engineering', 'surgery', 'humanitarian', 'project management', 'public-key cryptography']",chinese language  aerospace engineering  surgery  humanitarian  project management  public-key cryptography,6,76.44,81.17,83.54,80.39
+137,"['lesson plan', 'dnas', 'balance sheet', 'general statistics', 'public speaking', 'cloud platforms']",lesson plan  dnas  balance sheet  general statistics  public speaking  cloud platforms,6,61.5,56.59,90.33,69.48
+138,"['null coalescing operator', 'reason', 'budget']",null coalescing operator  reason  budget,3,78.99,66.02,93.61,79.54
+139,"['virtual reality', 'bayesian', 'culture', 'cryptocurrency', 'stock market', 'interact', 'business writing']",virtual reality  bayesian  culture  cryptocurrency  stock market  interact  business writing,7,76.39,89.15,75.81,80.45
+140,"['command-line interface', 'statistical analysis', 'organizational structure', 'translation']",command-line interface  statistical analysis  organizational structure  translation,4,99.73,96.06,72.01,89.27
+141,"['user interface design', 'exploratory data analysis', 'scaling', 'mergers & acquisitions', 'power electronics', 'physiology', 'informatics']",user interface design  exploratory data analysis  scaling  mergers & acquisitions  power electronics  physiology  informatics,7,86.66,82.74,91.42,86.94
+142,"['penetration test', 'interaction design', 'stress', 'user story', 'big data', 'unit testing', 'chemical engineering']",penetration test  interaction design  stress  user story  big data  unit testing  chemical engineering,7,63.42,83.23,87.7,78.12
+143,"['version control', 'entrepreneurship', 'grammar', 'business model canvas']",version control  entrepreneurship  grammar  business model canvas,4,53.9,60.8,50.53,55.08
+144,"['flow network', 'deployment environment', 'speech', 'business']",flow network  deployment environment  speech  business,4,71.77,83.61,93.03,82.8
+145,"['3d modeling', 'online learning', 'power electronics', 'test case']",3d modeling  online learning  power electronics  test case,4,75.89,94.54,58.44,76.29
+146,"['image processing', 'arcgis', 'film', 'i-deas', 'human resources', 'presentation']",image processing  arcgis  film  i-deas  human resources  presentation,6,54.56,74.33,79.61,69.5
+147,"['finance business finance', 'grammar', 'version control']",finance business finance  grammar  version control,3,74.61,50.19,73.93,66.24
+148,"['electrical engineering', 'payments', 'cloud storage', 'software testing', 'experimental design', 'cryptocurrency', 'graphs']",electrical engineering  payments  cloud storage  software testing  experimental design  cryptocurrency  graphs,7,59.35,83.04,79.4,73.93
+149,"['brand management', 'big data', 'dataflow', 'interest']",brand management  big data  dataflow  interest,4,63.72,68.83,62.29,64.95
+150,"['stress', 'i-deas', 'philosophy', 'computer architecture', 'project data-science data-analysis', 'interact', 'numpy']",stress  i-deas  philosophy  computer architecture  project data-science data-analysis  interact  numpy,7,74.25,86.46,63.17,74.63
+151,"['reinforcement learning', 'social work', 'recommender systems', 'phenomenon', 'business law']",reinforcement learning  social work  recommender systems  phenomenon  business law,5,81.05,68.64,65.49,71.72
+152,"['asset', 'performance management', 'java programming', 'training', 'game theory', 'anxiety', 'cancer']",asset  performance management  java programming  training  game theory  anxiety  cancer,7,73.72,62.58,68.36,68.22
+153,"['sustainable business', 'teaching method', 'android development', 'harmony']",sustainable business  teaching method  android development  harmony,4,60.63,98.58,75.42,78.21
+154,"['astronomy', 'design thinking', 'project mine', 'sales management', 'physics', 'history', 'display devices']",astronomy  design thinking  project mine  sales management  physics  history  display devices,7,66.6,77.57,73.65,72.61
+155,"['personal branding', 'web development', 'reason', 'cancer', 'project mine', 'logic gate', 'online learning']",personal branding  web development  reason  cancer  project mine  logic gate  online learning,7,72.35,82.37,84.09,79.6
+156,"['java (software platform)', 'chord', 'data security', 'kubernetes', 'operating systems']",java (software platform)  chord  data security  kubernetes  operating systems,5,68.63,68.09,71.7,69.47
+157,"['i-deas', 'null coalescing operator', 'sources', 'art', 'prevention', 'c sharp (programming language)']",i-deas  null coalescing operator  sources  art  prevention  c sharp (programming language),6,47.38,56.82,91.4,65.2
+158,"['general statistics', 'javascript', 'cluster analysis', 'nursing', 'rstudio']",general statistics  javascript  cluster analysis  nursing  rstudio,5,94.74,72.01,81.92,82.89
+159,"['software development process', 'process management', 'opinion']",software development process  process management  opinion,3,78.74,100.0,88.43,89.06
+160,"['e-commerce', 'sales', 'marketing plan']",e-commerce  sales  marketing plan,3,73.46,63.53,55.72,64.24
+161,"['regression', 'version control', 'physics', 'balance sheet', 'emotions', 'gratitude', 'sound design']",regression  version control  physics  balance sheet  emotions  gratitude  sound design,7,77.44,65.92,57.93,67.1
+162,"['hypothesis testing', 'phenomenon', 'pytorch', 'compiler']",hypothesis testing  phenomenon  pytorch  compiler,4,67.24,62.02,95.25,74.84
+163,"['voting', 'type i and type ii errors', 'flow network']",voting  type i and type ii errors  flow network,3,85.58,74.9,92.76,84.41
+164,"['international relations', 'specification (technical standard)', 'agile software development', 'speech']",international relations  specification (technical standard)  agile software development  speech,4,75.93,64.66,93.28,77.96
+165,"['case study', 'experimental design', 'cloud platforms', 'process', 'collaboration', 'customer relationship management']",case study  experimental design  cloud platforms  process  collaboration  customer relationship management,6,81.47,62.55,72.72,72.25
+166,"['image processing', 'risk', 'health care', 'organizational culture', 'python programming data-science machine-learning', 'project planning']",image processing  risk  health care  organizational culture  python programming data-science machine-learning  project planning,6,64.49,58.41,86.11,69.67
+167,"['principle', 'specification (technical standard)', 'crime', 'mindfulness']",principle  specification (technical standard)  crime  mindfulness,4,97.91,58.22,81.76,79.3
+168,"['time management', 'resource', 'convolution', 'brainstorming']",time management  resource  convolution  brainstorming,4,67.19,69.15,67.89,68.08
+169,"['ordered pair', 'lesson plan', 'research methods', 'gratitude', '3d modeling']",ordered pair  lesson plan  research methods  gratitude  3d modeling,5,64.63,75.58,65.03,68.41
+170,"['information security', 'teaching method', 'syntax', 'random forest', 'cryptocurrency']",information security  teaching method  syntax  random forest  cryptocurrency,5,78.25,74.4,72.13,74.93
+171,"['social psychology', 'python syntax and semantics', 'listening', 'language learning', 'speech', 'software engineering']",social psychology  python syntax and semantics  listening  language learning  speech  software engineering,6,64.11,68.08,84.06,72.08
+172,"['pricing', 'java annotation', 'e-nable', 'flask', 'supply chain', 'mindfulness']",pricing  java annotation  e-nable  flask  supply chain  mindfulness,6,81.01,63.27,76.19,73.49
+173,"['openfabrics alliance', 'augmented assignment', 'ios development', 'proposition']",openfabrics alliance  augmented assignment  ios development  proposition,4,84.02,54.97,81.52,73.5
+174,"['mobile development', 'culture', 'recurrent neural network', 'art', 'computer program', 'relative change and difference']",mobile development  culture  recurrent neural network  art  computer program  relative change and difference,6,67.05,81.85,65.84,71.58
+175,"['language', 'chemistry', 'photography', 'scrum (software development)', 'principle', 'agriculture', 'creativity']",language  chemistry  photography  scrum (software development)  principle  agriculture  creativity,7,53.34,55.47,75.58,61.46
+176,"['data analysis', 'business', 'project management', 'graphic design', 'leadership development', 'venture capital']",data analysis  business  project management  graphic design  leadership development  venture capital,6,78.12,64.15,82.66,74.98
+177,"['business law', 'korean language', 'six sigma', 'mergers & acquisitions', 'investment', 'video editing']",business law  korean language  six sigma  mergers & acquisitions  investment  video editing,6,55.06,74.21,60.47,63.25
+178,"['software', 'arrays', 'user interface', 'bookkeeping', 'financial accounting', 'war']",software  arrays  user interface  bookkeeping  financial accounting  war,6,67.18,75.57,64.68,69.14
+179,"['externality', 'calibration', 'persona (user experience)', 'chart', 'web application']",externality  calibration  persona (user experience)  chart  web application,5,70.39,87.08,68.08,75.18
+180,"['piano', 'death', 'innovation']",piano  death  innovation,3,85.03,61.44,81.36,75.94
+181,"['authority', 'journalism', 'behavioral economics']",authority  journalism  behavioral economics,3,92.3,45.34,65.44,67.69
+182,"['market segmentation', 'mechanical engineering', 'performance', 'crisis', 'foreign policy']",market segmentation  mechanical engineering  performance  crisis  foreign policy,5,81.92,72.56,79.45,77.98
+183,"['operating systems', 'strategic planning', 'disease', 'deep learning', 'design thinking', 'business communication', 'unit testing']",operating systems  strategic planning  disease  deep learning  design thinking  business communication  unit testing,7,67.75,76.04,73.13,72.31
+184,"['user research', 'fluid mechanics', 'recursively enumerable set', 'tailored access operations', 'creative writing', 'film']",user research  fluid mechanics  recursively enumerable set  tailored access operations  creative writing  film,6,89.01,78.05,79.05,82.04
+185,"['wireless', 'genetics', 'probability density function', 'genomics', 'adaptation', 'product management']",wireless  genetics  probability density function  genomics  adaptation  product management,6,70.06,69.15,69.81,69.67
+186,"['solar systems', 'data mining', 'budget', 'physics', 'listening']",solar systems  data mining  budget  physics  listening,5,79.73,69.95,78.48,76.05
+187,"['innovation', 'writing', 'patient', 'game theory', 'principle', 'intellectual', 'electronics']",innovation  writing  patient  game theory  principle  intellectual  electronics,7,99.9,85.45,71.09,85.48
+188,"['python programming data-science machine-learning', 'circular economy', 'financial statement', 'methodology', 'supply chain', 'market segmentation']",python programming data-science machine-learning  circular economy  financial statement  methodology  supply chain  market segmentation,6,89.41,70.1,50.54,70.02
+189,"['inflation', 'android studio', 'negotiation', 'health policy', 'active listening', 'strategic planning', 'average']",inflation  android studio  negotiation  health policy  active listening  strategic planning  average,7,62.9,52.55,70.78,62.08
+190,"['recursion', 'hypothesis', 'feature engineering', 'trigonometric integral', 'machine learning data-science machine-learning', ""euler's totient function"", 'web page']",recursion  hypothesis  feature engineering  trigonometric integral  machine learning data-science machine-learning  euler's totient function  web page,7,75.22,95.12,78.92,83.09
+191,"['user story', 'game theory', 'convolutional neural network', 'virtual machine']",user story  game theory  convolutional neural network  virtual machine,4,72.37,84.95,48.47,68.6
+192,"['video game development', 'asset', 'internality']",video game development  asset  internality,3,77.83,84.25,57.26,73.11
+193,"['architecture', 'syntax', 'materials', 'confidence', 'calibration', 'inflation']",architecture  syntax  materials  confidence  calibration  inflation,6,88.73,79.06,70.02,79.27
+194,"['organizational culture', 'design thinking', 'email writing', 'conflict resolution', 'social work']",organizational culture  design thinking  email writing  conflict resolution  social work,5,82.59,100.0,77.18,86.59
+195,"['semantics', 'relational database', 'health care', 'databases', 'geology']",semantics  relational database  health care  databases  geology,5,77.98,69.49,64.8,70.76
+196,"['inflation', 'leadership development', 'cloud storage', 'project data-science data-analysis', 'business analysis', 'cost']",inflation  leadership development  cloud storage  project data-science data-analysis  business analysis  cost,6,84.96,64.73,75.86,75.18
+197,"['network security', 'stack (abstract data type)', 'mathematical model', 'calibration']",network security  stack (abstract data type)  mathematical model  calibration,4,69.27,80.75,79.0,76.34
+198,"['agile software development', 'grammar', 'social media marketing', 'computer animation', 'prevention', 'matlab']",agile software development  grammar  social media marketing  computer animation  prevention  matlab,6,87.45,68.88,71.76,76.03
+199,"['target audience', 'methodology', 'wireless', 'maximization (psychology)', 'civil engineering']",target audience  methodology  wireless  maximization (psychology)  civil engineering,5,63.25,69.67,79.53,70.82
+200,"['project plan', 'anthropology', 'user research', 'statistical inference']",project plan  anthropology  user research  statistical inference,4,84.08,63.93,85.44,77.82
+201,"['unit testing', 'evolution', 'bioinformatics', 'web development', 'product development']",unit testing  evolution  bioinformatics  web development  product development,5,91.27,79.96,97.52,89.58
+202,"['online learning', 'coaching', 'correlation and dependence', 'authentication', 'art history']",online learning  coaching  correlation and dependence  authentication  art history,5,65.71,60.06,53.66,59.81
+203,"['receiving', 'cluster analysis', 'change management', 'financial accounting', 'social network']",receiving  cluster analysis  change management  financial accounting  social network,5,92.95,82.85,74.33,83.38
+204,"['modulo operation', 'presentation', 'matrices', 'sociology']",modulo operation  presentation  matrices  sociology,4,78.36,61.49,100.0,79.95
+205,"['teaching method', 'data analysis', 'ordered pair', 'chemical engineering', 'random forest', 'user (computing)']",teaching method  data analysis  ordered pair  chemical engineering  random forest  user (computing),6,76.55,76.31,83.71,78.86
+206,"['html5', 'arcgis', 'matrices', 'ethereum', 'piano', 'planning']",html5  arcgis  matrices  ethereum  piano  planning,6,80.77,77.69,65.51,74.66
+207,"['marketing strategy', 'chemical engineering', 'mathematics', 'software testing']",marketing strategy  chemical engineering  mathematics  software testing,4,80.66,97.58,91.15,89.8
+208,"['bigquery', 'neuroscience', 'health system', 'ecology', 'computational biology']",bigquery  neuroscience  health system  ecology  computational biology,5,94.12,68.87,63.12,75.37
+209,"['cancer', 'entry point', 'writing', 'therapy', 'android development', 'awareness']",cancer  entry point  writing  therapy  android development  awareness,6,73.49,75.67,88.13,79.1
+210,"['forecasting', 'computer graphics', 'strategic management', 'employment', 'bookkeeping']",forecasting  computer graphics  strategic management  employment  bookkeeping,5,54.69,93.35,73.1,73.72
+211,"['encryption', 'teaching', 'estimation', 'finance', 'korean language', 'cross-cultural communication', 'theory of relativity']",encryption  teaching  estimation  finance  korean language  cross-cultural communication  theory of relativity,7,69.88,62.85,55.14,62.62
+212,"['healthcare management', 'crime', 'computer-aided design']",healthcare management  crime  computer-aided design,3,84.88,75.88,59.52,73.43
+213,"['game theory', 'design pattern', 'clinical study design', 'anxiety', 'confidence', 'agriculture', 'market research']",game theory  design pattern  clinical study design  anxiety  confidence  agriculture  market research,7,59.46,70.97,95.03,75.15
+214,"['team management', 'javascript', 'algorithms', 'design pattern']",team management  javascript  algorithms  design pattern,4,71.88,56.96,72.05,66.97
+215,"['banking', 'computer program', 'parenting', 'scrum (software development)', 'cloud platforms']",banking  computer program  parenting  scrum (software development)  cloud platforms,5,71.73,42.64,74.35,62.9
+216,"['psychology', 'political science', 'marketing plan']",psychology  political science  marketing plan,3,72.23,83.35,97.19,84.26
+217,"['test automation', 'climate change', 'predictive analytics', 'religion', 'evolution', 'use case', 'augmented assignment']",test automation  climate change  predictive analytics  religion  evolution  use case  augmented assignment,7,88.52,71.77,61.72,74.0
+218,"['integral', 'probability', 'approximation error', 'bigquery', 'public-key cryptography', 'numbers (spreadsheet)', 'pedagogy']",integral  probability  approximation error  bigquery  public-key cryptography  numbers (spreadsheet)  pedagogy,7,100.0,75.71,75.17,83.63
+219,"['randomness', 'piano', 'budget']",randomness  piano  budget,3,74.71,77.38,73.27,75.12
+220,"['java annotation', 'troubleshooting', 'cross-cultural communication']",java annotation  troubleshooting  cross-cultural communication,3,68.12,68.44,74.61,70.39
+221,"['computer program', 'health policy', 'verification and validation']",computer program  health policy  verification and validation,3,68.48,66.45,76.28,70.4
+222,"['sound', 'journalism', 'methodology', 'therapy', 'semantics', 'inference', 'presentation']",sound  journalism  methodology  therapy  semantics  inference  presentation,7,71.94,93.05,43.19,69.39
+223,"['training and development', 'perception', 'chemical engineering', 'cloud storage', 'specification (technical standard)', 'essay writing', 'predictive analytics']",training and development  perception  chemical engineering  cloud storage  specification (technical standard)  essay writing  predictive analytics,7,88.1,89.95,50.12,76.06
+224,"['opinion', 'lecture', 'presentation', 'news']",opinion  lecture  presentation  news,4,70.89,70.54,58.11,66.51
+225,"['causality', 'internet of things', 'peer review', 'genomics', 'mechanical engineering', 'customer experience']",causality  internet of things  peer review  genomics  mechanical engineering  customer experience,6,65.67,61.67,96.03,74.46
+226,"['blockchain', 'cancer', 'business writing', 'case study', 'performance management', 'chaining']",blockchain  cancer  business writing  case study  performance management  chaining,6,86.23,90.26,83.66,86.72
+227,"['computer-aided design', 'sql', 'big data', 'teaching', 'stock']",computer-aided design  sql  big data  teaching  stock,5,61.45,68.71,80.87,70.34
+228,"['kubernetes', 'computational biology', 'openfabrics alliance', 'map', 'path (variable)', 'balance sheet', 'hypothesis testing']",kubernetes  computational biology  openfabrics alliance  map  path (variable)  balance sheet  hypothesis testing,7,60.33,83.56,72.12,72.0
+229,"['internet', 'machine learning data-science machine-learning', 'choice', 'switches', 'research methods', 'entry point', 'data analysis']",internet  machine learning data-science machine-learning  choice  switches  research methods  entry point  data analysis,7,70.5,83.53,80.33,78.12
+230,"['experiment', 'civil engineering', 'long short-term memory', 'sql', 'mathematics', 'cloud storage']",experiment  civil engineering  long short-term memory  sql  mathematics  cloud storage,6,70.67,88.91,62.03,73.87
+231,"['surgery', 'exploratory data analysis', 'penetration test', 'statistical inference', 'utility']",surgery  exploratory data analysis  penetration test  statistical inference  utility,5,82.39,82.12,71.29,78.6
+232,"['stack (abstract data type)', 'anxiety', 'type i and type ii errors', 'gratitude', 'application programming interfaces', 'disease', 'health care']",stack (abstract data type)  anxiety  type i and type ii errors  gratitude  application programming interfaces  disease  health care,7,78.91,59.99,86.09,75.0
+233,"['lecture', 'machine learning', 'accuracy and precision', 'display devices', 'creative writing']",lecture  machine learning  accuracy and precision  display devices  creative writing,5,72.78,68.73,87.59,76.37
+234,"['null coalescing operator', 'brainstorming', 'cost benefit analysis', 'web application', 'approximation error', 'cancer', 'semantics']",null coalescing operator  brainstorming  cost benefit analysis  web application  approximation error  cancer  semantics,7,66.55,58.1,56.32,60.32
+235,"['medicine', 'pandas', 'presentation', 'linear model']",medicine  pandas  presentation  linear model,4,82.27,59.63,96.06,79.32
+236,"['matplotlib', 'internet', 'journalism', 'strategy']",matplotlib  internet  journalism  strategy,4,50.02,95.36,77.53,74.3
+237,"['business strategy', 'banking', 'data analysis data-science data-analysis', 'data mining', 'user interface', 'average', 'business model canvas']",business strategy  banking  data analysis data-science data-analysis  data mining  user interface  average  business model canvas,7,73.84,68.46,79.79,74.03
+238,"['physiology', 'patient', 'qualitative research', 'trigonometric integral', 'physics']",physiology  patient  qualitative research  trigonometric integral  physics,5,74.55,88.24,76.37,79.72
+239,"['health care', 'essay writing', 'risk management', 'cloud platforms', 'listening', 'perception']",health care  essay writing  risk management  cloud platforms  listening  perception,6,76.8,70.64,74.32,73.92
+240,"['human voice', 'test automation', 'quantum mechanics']",human voice  test automation  quantum mechanics,3,78.69,54.48,58.82,64.0
+241,"['interfaces', 'authentication', 'evaluation', 'natural language processing', 'time management', 'behavior', 'acoustics']",interfaces  authentication  evaluation  natural language processing  time management  behavior  acoustics,7,83.92,77.05,72.79,77.92
+242,"['integral', 'entrepreneurship', 'convolutional neural network', 'genomics']",integral  entrepreneurship  convolutional neural network  genomics,4,75.22,79.17,68.52,74.31
+243,"['keras', 'communication', 'acoustics', 'recursively enumerable set', 'perception']",keras  communication  acoustics  recursively enumerable set  perception,5,65.66,77.35,63.26,68.76
+244,"['computer vision', 'mergers & acquisitions', 'simulation', 'feature engineering']",computer vision  mergers & acquisitions  simulation  feature engineering,4,79.9,54.57,87.35,73.94
+245,"['statistical classification', 'map', 'brand management', 'network security', 'audit', 'personal branding', 'analytics']",statistical classification  map  brand management  network security  audit  personal branding  analytics,7,80.67,78.07,86.79,81.85
+246,"['business case', 'internet of things', 'sustainable business', 'penetration test', 'surgery', 'nutrition']",business case  internet of things  sustainable business  penetration test  surgery  nutrition,6,94.99,87.17,52.91,78.36
+247,"['identity management', 'cloud storage', 'nutrition', 'android development', 'journalism', 'deep learning data-science machine-learning']",identity management  cloud storage  nutrition  android development  journalism  deep learning data-science machine-learning,6,59.65,67.5,75.31,67.49
+248,"['problem solving', 'marketing plan', 'c sharp (programming language)', 'personality', 'cipher', 'forecasting', 'personal branding']",problem solving  marketing plan  c sharp (programming language)  personality  cipher  forecasting  personal branding,7,81.21,66.29,77.24,74.91
+249,"['null coalescing operator', 'schedule', 'business communication', 'negotiation', 'international law', 'lecture', 'evolution']",null coalescing operator  schedule  business communication  negotiation  international law  lecture  evolution,7,65.94,67.66,58.12,63.91
+250,"['decision making', 'business analytics', 'risk factor', 'web application', 'cloud platforms']",decision making  business analytics  risk factor  web application  cloud platforms,5,63.92,58.78,63.29,62.0
+251,"['risk factor', 'ecosystems', 'logistic regression', 'machine learning', 'cross-cultural communication', 'financial markets', 'chinese language']",risk factor  ecosystems  logistic regression  machine learning  cross-cultural communication  financial markets  chinese language,7,87.64,63.61,100.0,83.75
+252,"['geographic information system', 'electrical engineering', 'deployment environment', 'tracking']",geographic information system  electrical engineering  deployment environment  tracking,4,80.92,77.22,64.7,74.28
+253,"['business analysis', 'digital marketing', 'virtual machine', 'recommender systems']",business analysis  digital marketing  virtual machine  recommender systems,4,83.4,68.09,76.46,75.99
+254,"['storytelling', 'syntax', 'political science', 'strategic management', 'web development', 'verification and validation']",storytelling  syntax  political science  strategic management  web development  verification and validation,6,100.0,73.85,88.79,87.55
+255,"['video game development', 'inventory', 'css', 'photography', 'booking']",video game development  inventory  css  photography  booking,5,66.56,74.58,96.25,79.13
+256,"['physics', 'war', 'intellectual property', 'health policy', 'ternary conditional operator', 'behavioral economics']",physics  war  intellectual property  health policy  ternary conditional operator  behavioral economics,6,67.48,96.75,83.49,82.57
+257,"['research methods', 'budget', 'international law', 'process', 'predictive analytics']",research methods  budget  international law  process  predictive analytics,5,68.25,82.59,86.67,79.17
+258,"['benefits', 'matlab', 'hypothesis']",benefits  matlab  hypothesis,3,82.46,56.16,66.27,68.3
+259,"['calibration', 'use case', 'test case']",calibration  use case  test case,3,72.03,74.11,82.45,76.19
+260,"['missing data', 'process management', 'systems design', 'spreadsheet', 'audience', 'population', 'supply chain']",missing data  process management  systems design  spreadsheet  audience  population  supply chain,7,77.13,58.98,79.56,71.89
+261,"['java annotation', 'training and development', 'psychology', 'relational database']",java annotation  training and development  psychology  relational database,4,82.33,81.72,87.97,84.0
+262,"['biodiversity', 'power electronics', 'chinese language', 'linearity']",biodiversity  power electronics  chinese language  linearity,4,85.01,80.51,74.16,79.89
+263,"['rendering (computer graphics)', 'demand', 'asset']",rendering (computer graphics)  demand  asset,3,55.07,80.16,77.49,70.91
+264,"['phenomenon', 'philosophy', 'schedule', 'scaling']",phenomenon  philosophy  schedule  scaling,4,78.26,59.68,62.03,66.66
+265,"['data model', 'matching', 'measurement', 'human resources', 'modeling', 'online learning', 'leadership development']",data model  matching  measurement  human resources  modeling  online learning  leadership development,7,87.64,74.53,83.18,81.78
+266,"['banking', 'war', 'law', 'bitcoin', 'kubernetes', 'cash flow', 'statistical analysis']",banking  war  law  bitcoin  kubernetes  cash flow  statistical analysis,7,75.34,75.36,86.26,78.99
+267,"['human voice', 'general statistics', 'trading', 'cryptography', 'latex', 'business model canvas']",human voice  general statistics  trading  cryptography  latex  business model canvas,6,68.81,76.15,69.45,71.47
+268,"['cost', 'long short-term memory', 'international law', 'music', 'computer vision', 'test set', 'business strategy']",cost  long short-term memory  international law  music  computer vision  test set  business strategy,7,69.79,71.29,77.67,72.91
+269,"['statistical classification', 'medicine', 'korean language', 'computer programming', 'search engine optimization']",statistical classification  medicine  korean language  computer programming  search engine optimization,5,69.26,90.07,64.26,74.53
+270,"['path (variable)', 'resource', 'marketing plan']",path (variable)  resource  marketing plan,3,72.76,69.72,92.36,78.28
+271,"['marketing strategy', 'internality', 'disease']",marketing strategy  internality  disease,3,77.36,87.38,57.17,73.97
+272,"['linear model', 'qualitative research', 'economy', 'exploratory data analysis']",linear model  qualitative research  economy  exploratory data analysis,4,78.2,85.68,75.99,79.96
+273,"['data analysis', 'business case', 'inflation', 'chi-squared distribution']",data analysis  business case  inflation  chi-squared distribution,4,87.79,68.79,91.91,82.83
+274,"['social work', 'search engine optimization', 'art history', 'leadership and management', 'user interface', 'confidence', 'therapy']",social work  search engine optimization  art history  leadership and management  user interface  confidence  therapy,7,100.0,70.65,69.65,80.1
+275,"['customer relationship management', 'data type', 'display devices', 'verification and validation', 'dataflow', 'phenomenon']",customer relationship management  data type  display devices  verification and validation  dataflow  phenomenon,6,92.44,93.95,68.73,85.04
+276,"['openfabrics alliance', 'materials', 'fintech']",openfabrics alliance  materials  fintech,3,69.96,71.62,58.87,66.81
+277,"['unix', 'humanitarian', 'political science', 'finance business finance', 'six sigma', 'flask']",unix  humanitarian  political science  finance business finance  six sigma  flask,6,63.98,62.95,65.79,64.24
+278,"['project management', 'ecosystems', 'mathematics', 'studentized residual', 'php']",project management  ecosystems  mathematics  studentized residual  php,5,74.58,77.81,93.61,82.0
+279,"['human learning', 'microsoft excel', 'relative change and difference', 'security', 'p-value', 'data structures']",human learning  microsoft excel  relative change and difference  security  p-value  data structures,6,63.02,86.81,72.43,74.09
+280,"['training and development', 'copywriting', 'game theory', 'banking']",training and development  copywriting  game theory  banking,4,74.41,83.1,61.53,73.01
+281,"['maximization (psychology)', 'spreadsheet', 'chinese language', 'russian', 'computer architecture', 'humanitarian']",maximization (psychology)  spreadsheet  chinese language  russian  computer architecture  humanitarian,6,79.59,77.0,80.91,79.17
+282,"['data security', 'health care', 'population']",data security  health care  population,3,78.47,100.0,67.35,81.94
+283,"['critical thinking', 'personality', 'cancer', 'exercise', 'power electronics', 'logistic regression', 'apache']",critical thinking  personality  cancer  exercise  power electronics  logistic regression  apache,7,68.63,67.52,68.33,68.16
+284,"['bayesian', 'negotiation', 'relative change and difference', 'mechanical design', 'financial markets', 'mobile development']",bayesian  negotiation  relative change and difference  mechanical design  financial markets  mobile development,6,67.35,89.27,92.05,82.89
+285,"['mechanical engineering', 'experiment', 'apache spark']",mechanical engineering  experiment  apache spark,3,68.15,65.01,80.66,71.27
+286,"['chemical engineering', 'leadership', 'crisis', 'convolutional neural network', 'artificial neural networks']",chemical engineering  leadership  crisis  convolutional neural network  artificial neural networks,5,68.37,82.6,77.44,76.13
+287,"['project planning', 'corporate bond', 'project management', 'political science', 'user (computing)']",project planning  corporate bond  project management  political science  user (computing),5,56.81,93.57,96.55,82.31
+288,"['business intelligence', 'analytics', 'geographic information system']",business intelligence  analytics  geographic information system,3,67.65,70.35,78.43,72.14
+289,"['cryptography', 'sound', 'type i and type ii errors', 'security']",cryptography  sound  type i and type ii errors  security,4,79.01,82.9,99.12,87.01
+290,"['cloud computing', 'i-deas', 'fintech', 'integral', 'compiler', 'autocad']",cloud computing  i-deas  fintech  integral  compiler  autocad,6,72.88,65.42,58.45,65.58
+291,"['pandas', 'writing', 'value proposition', 'privacy']",pandas  writing  value proposition  privacy,4,66.23,74.6,96.53,79.12
+292,"['cloud computing', 'regression analysis', 'therapy']",cloud computing  regression analysis  therapy,3,68.79,77.69,74.8,73.76
+293,"['algorithms', 'web', 'running', 'sustainability', 'food science', 'creativity', 'image processing']",algorithms  web  running  sustainability  food science  creativity  image processing,7,89.26,100.0,68.63,85.96
+294,"['.properties', 'use case', 'manufacturing process management', 'fluid mechanics', 'studentized residual', 'organizational structure']",.properties  use case  manufacturing process management  fluid mechanics  studentized residual  organizational structure,6,69.13,87.53,83.18,79.95
+295,"['business writing', 'schedule', 'marketing mix', 'booking']",business writing  schedule  marketing mix  booking,4,97.16,82.01,70.69,83.29
+296,"['software testing', 'research methods', 'spreadsheet', 'anatomy', 'mongodb', 'project mine', 'augmented assignment']",software testing  research methods  spreadsheet  anatomy  mongodb  project mine  augmented assignment,7,82.09,88.3,84.85,85.08
+297,"['mechanical design', 'generation', 'algorithms', 'market analysis', 'booking', 'listening']",mechanical design  generation  algorithms  market analysis  booking  listening,6,81.09,87.8,89.03,85.97
+298,"['virtual machine', 'choice', 'systems thinking', 'language learning']",virtual machine  choice  systems thinking  language learning,4,91.59,82.78,72.99,82.46
+299,"['augmented reality', 'machine learning data-science machine-learning', 'solar systems', 'leadership development']",augmented reality  machine learning data-science machine-learning  solar systems  leadership development,4,76.76,89.48,65.2,77.15
+300,"['product development', 'public-key cryptography', 'war', 'distributed computing']",product development  public-key cryptography  war  distributed computing,4,79.42,70.28,75.34,75.02
+301,"['bioinformatics', 'privacy', 'art', 'infection']",bioinformatics  privacy  art  infection,4,90.34,77.29,75.56,81.06
+302,"['augmented assignment', 'email', 'audience', 'inventory']",augmented assignment  email  audience  inventory,4,58.68,83.96,82.75,75.13
+303,"['running', 'neuroscience', 'software engineering', 'proposition', 'generation']",running  neuroscience  software engineering  proposition  generation,5,100.0,71.31,77.63,82.98
+304,"['economics', 'hyperparameter', 'market analysis']",economics  hyperparameter  market analysis,3,77.99,93.93,73.86,81.93
+305,"['language', 'health care', 'computer architecture']",language  health care  computer architecture,3,78.35,82.29,77.24,79.29
+306,"['personality', 'node.js', 'photography', 'mobile development', 'lecture']",personality  node.js  photography  mobile development  lecture,5,69.64,77.33,87.88,78.29
+307,"['recursion', 'recursively enumerable set', 'mathematics', 'sales management']",recursion  recursively enumerable set  mathematics  sales management,4,62.68,76.6,66.6,68.63
+308,"['business plan', 'patient', 'business communication', 'perception', 'tracking']",business plan  patient  business communication  perception  tracking,5,89.34,56.72,68.29,71.45
+309,"['solar energy', 'infection', 'java (software platform)', 'chinese language']",solar energy  infection  java (software platform)  chinese language,4,79.53,93.79,74.21,82.51
+310,"['keras', 'inflation', 'interactivity']",keras  inflation  interactivity,3,68.34,97.57,57.62,74.51
+311,"['trading', 'pedagogy', 'death', 'piano', 'machine learning', 'plotly']",trading  pedagogy  death  piano  machine learning  plotly,6,48.61,80.28,68.98,65.96
+312,"['manufacturing process management', 'use case', 'personal advertisement']",manufacturing process management  use case  personal advertisement,3,62.75,83.5,77.93,74.72
+313,"['writing', 'benefits', 'business', 'web service', 'object detection']",writing  benefits  business  web service  object detection,5,68.23,59.64,85.47,71.11
+314,"['robotics', 'data science', 'approximation error', 'creative writing', 'troubleshooting']",robotics  data science  approximation error  creative writing  troubleshooting,5,82.8,73.81,97.16,84.59
+315,"['arduino', 'computer program', 'blockchain', 'financial markets', 'mathematical optimization', 'marketing plan']",arduino  computer program  blockchain  financial markets  mathematical optimization  marketing plan,6,62.16,56.69,66.7,61.85
+316,"['strategic thinking', 'arcgis', 'training and development', 'customer relationship management', 'population', 'matrices']",strategic thinking  arcgis  training and development  customer relationship management  population  matrices,6,74.45,77.92,72.11,74.83
+317,"['piano', 'business analytics', 'surgery', 'convolutional neural network', 'self-awareness']",piano  business analytics  surgery  convolutional neural network  self-awareness,5,79.22,59.98,92.33,77.18
+318,"['neuroscience', 'interpretation', 'html', 'game design', 'cloud platforms']",neuroscience  interpretation  html  game design  cloud platforms,5,74.01,88.41,79.11,80.51
+319,"['download', 'regression analysis', 'sales']",download  regression analysis  sales,3,80.48,81.84,80.37,80.9
+320,"['stock', 'collaboration', 'google cloud platform', 'github', 'plant', 'epidemiology']",stock  collaboration  google cloud platform  github  plant  epidemiology,6,82.71,90.95,77.36,83.67
+321,"['hyperparameter', 'randomness', 'email', 'computational biology', 'continuous function', 'budget', 'predictive analytics']",hyperparameter  randomness  email  computational biology  continuous function  budget  predictive analytics,7,83.51,73.92,92.28,83.24
+322,"['planning', 'c programming', 'japanese language', 'logic']",planning  c programming  japanese language  logic,4,66.88,96.61,74.52,79.34
+323,"['sources', 'software development process', 'illustration']",sources  software development process  illustration,3,57.83,76.54,66.83,67.07
+324,"['data mining', 'wireless', 'design pattern', 'marketing plan', 'resource']",data mining  wireless  design pattern  marketing plan  resource,5,85.09,67.17,69.65,73.97
+325,"['compiler', 'email writing', 'corporate bond', 'financial statement']",compiler  email writing  corporate bond  financial statement,4,52.33,69.57,45.91,55.94
+326,"['anxiety', 'marketing mix', 'spreadsheet', 'supply chain management', 'matlab', 'project']",anxiety  marketing mix  spreadsheet  supply chain management  matlab  project,6,55.99,84.12,84.43,74.85
+327,"['computer vision', 'unix shells', 'c dynamic memory allocation', 'bitcoin', 'internality', 'neuroscience', 'public-key cryptography']",computer vision  unix shells  c dynamic memory allocation  bitcoin  internality  neuroscience  public-key cryptography,7,80.11,63.4,74.43,72.64
+328,"['openfabrics alliance', 'opencv', 'sustainability', 'budget', 'computer graphics', 'investment', 'population']",openfabrics alliance  opencv  sustainability  budget  computer graphics  investment  population,7,74.96,61.1,93.04,76.37
+329,"['safety', 'linguistics', 'computer programming computer-science software-development', 'specification (technical standard)', 'teaching method', 'distributed computing']",safety  linguistics  computer programming computer-science software-development  specification (technical standard)  teaching method  distributed computing,6,85.53,72.35,75.32,77.73
+330,"['permutations', 'relative change and difference', 'behavior', 'computer architecture']",permutations  relative change and difference  behavior  computer architecture,4,77.5,50.5,72.03,66.68
+331,"['customer experience', 'interact', 'databases', 'data structures', 'java programming', 'experimental design', 'load balancing']",customer experience  interact  databases  data structures  java programming  experimental design  load balancing,7,66.82,62.98,71.63,67.14
+332,"['human voice', 'business communication', 'game theory', 'educational psychology', 'web development', 'specification (technical standard)', 'health policy']",human voice  business communication  game theory  educational psychology  web development  specification (technical standard)  health policy,7,96.57,82.69,68.15,82.47
+333,"['version control', 'intellectual property', 'use case', 'six sigma']",version control  intellectual property  use case  six sigma,4,81.87,91.79,86.1,86.59
+334,"['relative change and difference', 'decision making', 'terrorism']",relative change and difference  decision making  terrorism,3,75.72,67.24,83.38,75.44
+335,"['customer relationship management', 'deep learning data-science machine-learning', 'verification and validation', 'training and development', 'leadership and management business leadership-and-management', 'storytelling', 'audience']",customer relationship management  deep learning data-science machine-learning  verification and validation  training and development  leadership and management business leadership-and-management  storytelling  audience,7,79.72,85.74,82.62,82.7
+336,"['business model canvas', 'authentication', 'swift programming']",business model canvas  authentication  swift programming,3,87.59,68.58,90.81,82.33
+337,"['english language', 'supply chain', 'organizational structure', 'user interface', 'writing']",english language  supply chain  organizational structure  user interface  writing,5,77.37,99.9,66.73,81.33
+338,"['recursively enumerable set', 'video game development', 'solar energy']",recursively enumerable set  video game development  solar energy,3,95.83,77.37,67.18,80.13
+339,"['intellectual', 'python programming data-science machine-learning', 'foreign policy', 'object detection', 'informatics']",intellectual  python programming data-science machine-learning  foreign policy  object detection  informatics,5,69.19,71.16,80.09,73.48
+340,"['breach (security exploit)', 'big data', 'data mining', 'photography', 'organizational culture', 'python syntax and semantics']",breach (security exploit)  big data  data mining  photography  organizational culture  python syntax and semantics,6,81.27,68.12,74.71,74.7
+341,"['emotions', 'lesson plan', 'trigonometric integral', 'creativity', 'internet of things', 'iteration']",emotions  lesson plan  trigonometric integral  creativity  internet of things  iteration,6,100.0,95.73,80.24,91.99
+342,"['news', 'computer-aided design', 'matrices', 'running', 'stock']",news  computer-aided design  matrices  running  stock,5,75.46,76.44,82.36,78.09
+343,"['iteration', 'food science', 'professional development']",iteration  food science  professional development,3,62.73,71.91,54.98,63.2
+344,"['gratitude', 'population', 'fundraising']",gratitude  population  fundraising,3,79.79,82.77,69.2,77.25
+345,"['change management', 'awareness', 'illustration', 'missing data']",change management  awareness  illustration  missing data,4,93.89,60.29,57.43,70.54
+346,"['p-value', 'funds', 'data science', 'keras', 'switches', 'internet of things', 'ecology']",p-value  funds  data science  keras  switches  internet of things  ecology,7,77.69,87.57,95.21,86.82
+347,"['regression', 'running', 'project', 'interfaces']",regression  running  project  interfaces,4,69.49,87.94,74.54,77.33
+348,"['angular', 'calibration', 'mysql', 'renewable energy', 'privacy', 'fluid mechanics']",angular  calibration  mysql  renewable energy  privacy  fluid mechanics,6,72.93,85.6,82.83,80.45
+349,"['tailored access operations', 'manufacturing process management', 'autodesk', 'awareness']",tailored access operations  manufacturing process management  autodesk  awareness,4,56.08,92.72,91.56,80.12
+350,"['recruitment', 'therapy', 'project mine', 'hyperparameter', 'social media marketing']",recruitment  therapy  project mine  hyperparameter  social media marketing,5,67.49,79.75,80.93,76.06
+351,"['civil engineering', 'performance', 'consumer behaviour']",civil engineering  performance  consumer behaviour,3,78.13,68.4,66.94,71.15
+352,"['mathematical model', 'numpy', 'authentication', 'null coalescing operator', 'balance sheet']",mathematical model  numpy  authentication  null coalescing operator  balance sheet,5,74.69,89.07,81.52,81.76
+353,"['stock', 'editing', 'marketing strategy', 'sports', 'i-deas', 'budget', 'mobile development']",stock  editing  marketing strategy  sports  i-deas  budget  mobile development,7,70.55,84.26,40.82,65.21
+354,"['power electronics', 'sources', 'html5', 'venture capital', 'unix', 'command-line interface', 'computer programming computer-science software-development']",power electronics  sources  html5  venture capital  unix  command-line interface  computer programming computer-science software-development,7,88.79,54.12,70.65,71.19
+355,"['natural language', 'mechanical design', 'lecture']",natural language  mechanical design  lecture,3,61.56,59.46,88.93,69.99
+356,"['mathematical model', 'creativity', 'electronics', 'tracking', 'risk', 'numbers (spreadsheet)', 'reinforcement learning']",mathematical model  creativity  electronics  tracking  risk  numbers (spreadsheet)  reinforcement learning,7,69.39,79.16,74.44,74.33
+357,"['authentication', 'artificial neural networks', 'convolutional neural network']",authentication  artificial neural networks  convolutional neural network,3,80.72,75.92,59.6,72.08
+358,"['protein', 'sales management', 'principle', 'cryptocurrency', 'translation']",protein  sales management  principle  cryptocurrency  translation,5,86.96,69.07,56.32,70.78
+359,"['correlation and dependence', 'keras', 'urban planning', 'iteration', 'data type', 'mysql', 'user experience']",correlation and dependence  keras  urban planning  iteration  data type  mysql  user experience,7,69.86,93.01,85.2,82.69
+360,"['test automation', 'leadership and management', 'research methods', 'risk', 'simulation']",test automation  leadership and management  research methods  risk  simulation,5,70.82,70.81,71.14,70.92
+361,"['stock market', 'innovation', 'psychologies', 'analysis', 'matlab', 'language']",stock market  innovation  psychologies  analysis  matlab  language,6,99.92,79.58,80.16,86.55
+362,"['organizational structure', 'tailored access operations', 'interfaces']",organizational structure  tailored access operations  interfaces,3,87.36,77.87,71.89,79.04
+363,"['therapy', 'protein', 'graphic design']",therapy  protein  graphic design,3,72.64,74.14,74.55,73.78
+364,"['switches', 'facilitation', 'balance sheet', 'tailored access operations', 'purchasing', 'deep learning', 'schedule']",switches  facilitation  balance sheet  tailored access operations  purchasing  deep learning  schedule,7,83.73,75.62,83.79,81.05
+365,"['mergers & acquisitions', 'cross-cultural communication', 'food security', 'arbitration', 'supply chain management', 'clinical study design', 'economics']",mergers & acquisitions  cross-cultural communication  food security  arbitration  supply chain management  clinical study design  economics,7,74.03,75.94,51.02,67.0
+366,"['php', 'interpretation', 'p-value']",php  interpretation  p-value,3,86.0,79.16,86.98,84.04
+367,"['operations management', 'emotions', 'openfabrics alliance', 'relational database']",operations management  emotions  openfabrics alliance  relational database,4,40.24,100.0,73.32,71.19
+368,"['project plan', 'biodiversity', 'copywriting', 'sales management', 'encryption', 'statistical inference', 'journalism']",project plan  biodiversity  copywriting  sales management  encryption  statistical inference  journalism,7,88.3,62.52,82.35,77.72
+369,"['scrum (software development)', 'medicine', 'interpretation', 'deployment environment', 'probability density function', 'simulation']",scrum (software development)  medicine  interpretation  deployment environment  probability density function  simulation,6,62.36,67.51,97.97,75.95
+370,"['solar systems', 'map', 'grammar', 'unit testing', 'python syntax and semantics']",solar systems  map  grammar  unit testing  python syntax and semantics,5,72.71,77.61,85.44,78.59
+371,"['front and back ends', 'html', 'statistical analysis', 'information security']",front and back ends  html  statistical analysis  information security,4,80.95,76.81,79.38,79.04
+372,"['informatics', 'i-deas', 'encryption', 'r&d management']",informatics  i-deas  encryption  r&d management,4,100.0,74.31,77.41,83.91
+373,"['purchasing', 'logistic regression', 'statistical hypothesis testing', 'health informatics', 'hypothesis testing']",purchasing  logistic regression  statistical hypothesis testing  health informatics  hypothesis testing,5,87.61,88.27,89.24,88.37
+374,"['surgery', 'software engineering', 'mental health']",surgery  software engineering  mental health,3,82.66,61.28,94.6,79.52
+375,"['listening', 'crisis', 'illustration', 'audit', 'hypothesis testing', 'business communication']",listening  crisis  illustration  audit  hypothesis testing  business communication,6,61.24,78.63,65.95,68.61
+376,"['physics', 'geographic information system', 'public-key cryptography', 'epidemiology', 'emergency']",physics  geographic information system  public-key cryptography  epidemiology  emergency,5,74.23,78.95,78.86,77.34
+377,"['healing', 'stock', 'health', 'convolutional neural network', 'climate change', 'user (computing)', 'teaching']",healing  stock  health  convolutional neural network  climate change  user (computing)  teaching,7,80.06,94.36,80.44,84.96
+378,"['food security', 'awareness', 'semantics', 'exploratory data analysis']",food security  awareness  semantics  exploratory data analysis,4,72.07,86.57,89.27,82.64
+379,"['banking', 'chemistry', 'opinion', 'lambda calculus']",banking  chemistry  opinion  lambda calculus,4,60.27,82.17,83.41,75.28
+380,"['chemistry', 'convolutional neural network', 'accounting', 'sources', 'data mining', 'object-oriented programming']",chemistry  convolutional neural network  accounting  sources  data mining  object-oriented programming,6,71.43,91.51,73.2,78.71
+381,"['public health', 'email', 'hypothesis testing', 'java (software platform)', 'hyperparameter', 'bible']",public health  email  hypothesis testing  java (software platform)  hyperparameter  bible,6,76.51,72.92,75.19,74.87
+382,"['surgery', 'film', 'smart contract']",surgery  film  smart contract,3,61.84,57.72,94.13,71.23
+383,"['design thinking', 'organizing (management)', 'dialogue']",design thinking  organizing (management)  dialogue,3,64.84,63.1,49.16,59.03
+384,"['network security', 'recurrent neural network', 'download']",network security  recurrent neural network  download,3,67.33,59.12,94.7,73.72
+385,"['art history', 'adaptation', 'information security', 'strategy', 'trading']",art history  adaptation  information security  strategy  trading,5,87.12,66.74,100.0,84.62
+386,"['leadership', 'humanitarian', 'prevention']",leadership  humanitarian  prevention,3,86.78,71.1,45.01,67.63
+387,"['schedule', 'recommender systems', 'consumer behaviour', 'rendering (computer graphics)', 'project data-science data-analysis', 'health care', 'ecosystem']",schedule  recommender systems  consumer behaviour  rendering (computer graphics)  project data-science data-analysis  health care  ecosystem,7,100.0,58.33,55.26,71.19
+388,"['lambda calculus', 'data type', 'probability']",lambda calculus  data type  probability,3,87.27,100.0,91.61,92.96
+389,"['download', 'agile software development', 'leadership and management business leadership-and-management', 'inflation', 'strategy']",download  agile software development  leadership and management business leadership-and-management  inflation  strategy,5,81.77,82.14,85.24,83.05
+390,"['design thinking', 'unix', 'writing', 'object detection']",design thinking  unix  writing  object detection,4,84.11,78.37,76.25,79.58
+391,"['running', 'keras', 'c dynamic memory allocation', 'null coalescing operator', 'causality', 'documents']",running  keras  c dynamic memory allocation  null coalescing operator  causality  documents,6,74.25,65.95,71.63,70.61
+392,"['public health', 'javascript', 'funds', 'accuracy and precision']",public health  javascript  funds  accuracy and precision,4,54.68,73.82,63.14,63.88
+393,"['mindfulness', 'financial markets', 'plotly', 'gratitude', 'kubernetes']",mindfulness  financial markets  plotly  gratitude  kubernetes,5,61.76,77.16,91.7,76.87
+394,"['tableau software', 'supply chain management', 'advertising', 'global', 'marketing']",tableau software  supply chain management  advertising  global  marketing,5,86.02,56.15,63.12,68.43
+395,"['biodiversity', 'command-line interface', 'product management', 'interest']",biodiversity  command-line interface  product management  interest,4,86.29,63.21,72.3,73.93
+396,"['object detection', 'relative change and difference', 'international relations', 'collaboration']",object detection  relative change and difference  international relations  collaboration,4,81.6,63.38,76.26,73.75
+397,"['mathematics', 'use case', 'evolution', ""euler's totient function"", 'constitution']",mathematics  use case  evolution  euler's totient function  constitution,5,58.99,67.78,78.84,68.54
+398,"['customer experience', 'prevention', 'translation', 'mechanical design', 'organizational culture', 'sound design']",customer experience  prevention  translation  mechanical design  organizational culture  sound design,6,55.88,80.29,74.76,70.31
+399,"['social network', 'ethics', 'fundraising', 'theory of relativity', 'business model canvas', 'scrum (software development)']",social network  ethics  fundraising  theory of relativity  business model canvas  scrum (software development),6,81.63,77.69,91.37,83.56
+400,"['security', 'marketing plan', 'business case', 'storytelling', 'cloud computing security', 'biodiversity']",security  marketing plan  business case  storytelling  cloud computing security  biodiversity,6,76.5,69.85,76.47,74.27
+401,"['renewable energy', 'emotional intelligence', 'supply chain management', 'social media marketing', 'cryptography', 'databases', 'keras']",renewable energy  emotional intelligence  supply chain management  social media marketing  cryptography  databases  keras,7,81.52,75.59,75.49,77.53
+402,"['physics', 'coaching', 'employment', 'tailored access operations', 'r&d management', 'cancer', 'risk factor']",physics  coaching  employment  tailored access operations  r&d management  cancer  risk factor,7,66.58,67.05,58.17,63.93
+403,"['behavior', 'presentation', 'conflict resolution', 'robotics', 'organizational culture', 'principle']",behavior  presentation  conflict resolution  robotics  organizational culture  principle,6,95.99,60.07,66.69,74.25
+404,"['bias', 'statistical classification', 'process management', 'interfaces', 'android studio', 'negotiation', 'genetics']",bias  statistical classification  process management  interfaces  android studio  negotiation  genetics,7,66.38,85.74,71.46,74.53
+405,"['ethics', 'symptoms', 'breach (security exploit)']",ethics  symptoms  breach (security exploit),3,89.97,66.92,78.35,78.41
+406,"['path (variable)', 'linguistics', 'biology']",path (variable)  linguistics  biology,3,64.98,100.0,60.75,75.24
+407,"['big data', 'bookkeeping', 'project planning', 'arbitration', 'hypothesis', 'online learning', 'disease']",big data  bookkeeping  project planning  arbitration  hypothesis  online learning  disease,7,78.72,82.61,79.97,80.43
+408,"['parent', 'mechanical engineering', 'microsoft excel', 'political science']",parent  mechanical engineering  microsoft excel  political science,4,72.78,73.44,75.53,73.91
+409,"['media market', 'business law', 'social work', 'constitution', 'logic gate', 'command-line interface']",media market  business law  social work  constitution  logic gate  command-line interface,6,73.24,86.57,100.0,86.6
+410,"['social network', 'mysql', 'security management', 'computer programming']",social network  mysql  security management  computer programming,4,68.31,58.56,73.94,66.94
+411,"['3d printing', 'angular', 'information security', 'procurement']",3d printing  angular  information security  procurement,4,100.0,65.36,94.67,86.68
+412,"['patient', 'signal processing', 'mental health', 'feature engineering', 'fundraising', 'problem solving', 'load balancing']",patient  signal processing  mental health  feature engineering  fundraising  problem solving  load balancing,7,95.13,68.36,81.83,81.77
+413,"['health system', 'e-nable', 'cloud infrastructure', 'arbitration']",health system  e-nable  cloud infrastructure  arbitration,4,94.54,70.45,72.56,79.18
+414,"['use case', 'algorithms', 'fluid mechanics', 'enabling', 'blockchain', 'chi-squared distribution']",use case  algorithms  fluid mechanics  enabling  blockchain  chi-squared distribution,6,68.02,62.82,67.21,66.02
+415,"['architecture', 'plotly', 'thought', 'autodesk', 'foreign policy', 'augmented reality', 'numbers (spreadsheet)']",architecture  plotly  thought  autodesk  foreign policy  augmented reality  numbers (spreadsheet),7,60.31,75.41,65.76,67.16
+416,"['finance business finance', 'social work', 'ethereum', 'behavioral economics', 'correlation and dependence', 'religion']",finance business finance  social work  ethereum  behavioral economics  correlation and dependence  religion,6,77.81,56.33,78.97,71.04
+417,"['finance business finance', 'sustainable business', 'iteration', 'switches', 'thought']",finance business finance  sustainable business  iteration  switches  thought,5,85.0,51.08,79.49,71.86
+418,"['financial statement', 'intellectual', 'creative writing', 'sap erp', 'evolution']",financial statement  intellectual  creative writing  sap erp  evolution,5,89.73,60.48,95.07,81.76
+419,"['instructional design', 'health policy', 'bigquery', 'stack (abstract data type)', 'ternary conditional operator', 'design thinking']",instructional design  health policy  bigquery  stack (abstract data type)  ternary conditional operator  design thinking,6,80.03,66.54,74.33,73.63
+420,"['sql', 'recurrent neural network', 'autocad', 'linguistics', 'methodology', 'scikit-learn']",sql  recurrent neural network  autocad  linguistics  methodology  scikit-learn,6,81.7,75.91,81.47,79.69
+421,"['organizational structure', 'online learning', 'cryptocurrency', 'instructional design', 'medicine']",organizational structure  online learning  cryptocurrency  instructional design  medicine,5,63.95,77.03,58.04,66.34
+422,"['social network', 'proposition', 'fluid mechanics', 'experimental design']",social network  proposition  fluid mechanics  experimental design,4,73.67,64.15,66.17,68.0
+423,"['creativity', 'procurement', 'bias', 'stock', 'operations management']",creativity  procurement  bias  stock  operations management,5,89.83,88.1,82.31,86.75
+424,"['stack (abstract data type)', 'self-awareness', 'consumer behaviour', 'modulo operation', 'food security', 'genomics']",stack (abstract data type)  self-awareness  consumer behaviour  modulo operation  food security  genomics,6,61.89,71.2,89.56,74.22
+425,"['lambda calculus', 'business communication', 'population', 'matrices']",lambda calculus  business communication  population  matrices,4,76.7,100.0,79.72,85.47
+426,"['social media', 'economics', 'balance sheet']",social media  economics  balance sheet,3,77.3,71.29,76.6,75.07
+427,"['meditation', 'training and development', 'trading', 'asset', 'breach (security exploit)']",meditation  training and development  trading  asset  breach (security exploit),5,73.17,83.5,86.48,81.05
+428,"['teaching method', 'statistical classification', 'ethereum', 'public-key cryptography']",teaching method  statistical classification  ethereum  public-key cryptography,4,65.57,59.03,52.97,59.19
+429,"['language learning', 'intellectual property', 'agriculture', 'entrepreneurship']",language learning  intellectual property  agriculture  entrepreneurship,4,81.1,61.76,49.17,64.01
+430,"['collaboration', 'public-key cryptography', 'food security', 'training']",collaboration  public-key cryptography  food security  training,4,79.66,100.0,74.93,84.86
+431,"['network security', 'flow network', 'speech', 'java annotation']",network security  flow network  speech  java annotation,4,85.06,75.98,73.81,78.29
+432,"['mergers & acquisitions', 'professional development', 'six sigma', 'market segmentation', 'interfaces']",mergers & acquisitions  professional development  six sigma  market segmentation  interfaces,5,86.03,71.52,78.21,78.58
+433,"['marketing', 'robotics', 'recursively enumerable set', 'professional development', 'chart']",marketing  robotics  recursively enumerable set  professional development  chart,5,78.86,66.98,86.9,77.58
+434,"['japanese language', 'emotions', 'matrices', 'internet of things', 'opinion', 'authentication']",japanese language  emotions  matrices  internet of things  opinion  authentication,6,72.9,65.93,81.44,73.42
+435,"['evolution', 'crisis', 'algorithms', 'global', 'sports', 'target audience', 'syntax']",evolution  crisis  algorithms  global  sports  target audience  syntax,7,64.22,75.34,74.89,71.48
+436,"['inflation', 'customer experience', 'education', 'kubernetes', 'feature engineering', 'mental health']",inflation  customer experience  education  kubernetes  feature engineering  mental health,6,88.03,80.7,74.7,81.14
+437,"['framing', 'regression analysis', 'sources', 'leadership and management business leadership-and-management', 'geology', 'r&d management', 'randomness']",framing  regression analysis  sources  leadership and management business leadership-and-management  geology  r&d management  randomness,7,84.81,91.68,81.69,86.06
+438,"['decision making', 'machine learning data-science machine-learning', 'decision tree', 'correlation and dependence', 'solar systems', 'r&d management']",decision making  machine learning data-science machine-learning  decision tree  correlation and dependence  solar systems  r&d management,6,75.12,59.26,62.22,65.53
+439,"['software development process', 'bible', 'schedule', 'architecture']",software development process  bible  schedule  architecture,4,71.34,67.69,72.76,70.59
+440,"['autodesk', 'accuracy and precision', 'operations management']",autodesk  accuracy and precision  operations management,3,75.68,81.36,74.15,77.06
+441,"['voting', 'file shortcut', 'booking', 'css']",voting  file shortcut  booking  css,4,80.84,75.77,51.29,69.3
+442,"['ethics', 'renewable energy', 'pricing']",ethics  renewable energy  pricing,3,63.73,73.27,60.48,65.83
+443,"['big data', 'user interface', 'wireless', 'user experience', 'python programming data-science machine-learning']",big data  user interface  wireless  user experience  python programming data-science machine-learning,5,82.2,93.37,89.63,88.4
+444,"['algorithms', 'accuracy and precision', 'signal processing', 'specification (technical standard)', 'operating systems', 'aerospace engineering']",algorithms  accuracy and precision  signal processing  specification (technical standard)  operating systems  aerospace engineering,6,72.44,92.89,76.78,80.7
+445,"['self-awareness', 'health policy', 'social media']",self-awareness  health policy  social media,3,70.95,67.64,71.37,69.99
+446,"['analysis', 'relative change and difference', 'perception', 'disaster', 'circular economy']",analysis  relative change and difference  perception  disaster  circular economy,5,70.34,77.04,76.93,74.77
+447,"['schedule', 'cryptocurrency', 'fluid mechanics']",schedule  cryptocurrency  fluid mechanics,3,75.04,80.24,89.29,81.52
+448,"['user research', 'search engine optimization', 'general statistics', 'map']",user research  search engine optimization  general statistics  map,4,86.39,57.18,44.35,62.64
+449,"['network security', 'business communication', 'mechanical design', 'object detection', 'probability density function']",network security  business communication  mechanical design  object detection  probability density function,5,86.21,58.6,72.3,72.37
+450,"['forecasting', 'exploratory data analysis', 'instructional design', 'business law', 'arbitration', 'case study', 'object detection']",forecasting  exploratory data analysis  instructional design  business law  arbitration  case study  object detection,7,60.96,53.38,81.5,65.28
+451,"['meditation', 'speech', 'psychology', 'behavioral economics', 'web service', 'adaptation']",meditation  speech  psychology  behavioral economics  web service  adaptation,6,84.11,68.08,43.91,65.37
+452,"['business plan', 'regression analysis', 'persona (user experience)', 'language']",business plan  regression analysis  persona (user experience)  language,4,68.45,79.7,57.25,68.47
+453,"['causality', 'security', 'audit', 'feature engineering', 'entrepreneurship', 'strategic thinking', 'psychologies']",causality  security  audit  feature engineering  entrepreneurship  strategic thinking  psychologies,7,77.2,74.82,81.95,77.99
+454,"['authority', 'business', 'human computer interaction', 'software engineering', 'storytelling']",authority  business  human computer interaction  software engineering  storytelling,5,76.43,63.32,89.36,76.37
+455,"['disaster', 'interview', 'algorithms']",disaster  interview  algorithms,3,73.1,74.67,63.8,70.52
+456,"['teaching method', 'creativity', 'neuroscience', 'business analytics']",teaching method  creativity  neuroscience  business analytics,4,69.68,64.38,72.92,69.0
+457,"['data type', 'storytelling', 'fluid mechanics', 'strategic thinking', 'molecular biology']",data type  storytelling  fluid mechanics  strategic thinking  molecular biology,5,95.54,58.54,55.64,69.9
+458,"['language', 'missing data', 'correlation and dependence', 'business communication', 'reinforcement learning', 'load balancing', 'bayesian']",language  missing data  correlation and dependence  business communication  reinforcement learning  load balancing  bayesian,7,92.65,72.49,66.97,77.37
+459,"['personality', 'film', 'business analysis']",personality  film  business analysis,3,87.48,67.73,96.91,84.04
+460,"['training and development', 'usability', 'test set', 'network security', 'justice']",training and development  usability  test set  network security  justice,5,83.14,69.15,100.0,84.09
+461,"['web design', 'health care', 'power electronics']",web design  health care  power electronics,3,67.73,83.91,78.59,76.74
+462,"['facilitation', 'market (economics)', 'sports', 'media market', 'performance management', 'download']",facilitation  market (economics)  sports  media market  performance management  download,6,90.62,93.74,75.38,86.58
+463,"['mergers & acquisitions', 'business writing', 'user interface design', 'inflation', 'front and back ends', 'budget', 'business plan']",mergers & acquisitions  business writing  user interface design  inflation  front and back ends  budget  business plan,7,65.96,80.52,66.87,71.12
+464,"['customer relationship management', 'mergers & acquisitions', 'web design', 'molecular biology', 'investment']",customer relationship management  mergers & acquisitions  web design  molecular biology  investment,5,99.16,76.64,70.62,82.14
+465,"['circular economy', 'cancer', 'accounting', 'interfaces', 'planning']",circular economy  cancer  accounting  interfaces  planning,5,77.22,58.83,63.34,66.46
+466,"['hashing', 'child', 'conflict resolution', 'c programming', 'dynamic programming']",hashing  child  conflict resolution  c programming  dynamic programming,5,89.4,67.12,62.44,72.99
+467,"['political science', 'stack (abstract data type)', 'spreadsheet software', 'risk management', 'observation', 'chinese language']",political science  stack (abstract data type)  spreadsheet software  risk management  observation  chinese language,6,81.44,89.23,83.63,84.77
+468,"['c++', 'map', 'spreadsheet']",c++  map  spreadsheet,3,86.95,65.92,57.94,70.27
+469,"['therapy', 'thought', 'journalism']",therapy  thought  journalism,3,93.02,71.13,71.99,78.71
+470,"['aerospace engineering', 'image processing', 'opinion', 'modulo operation', 'business strategy', 'statistical classification']",aerospace engineering  image processing  opinion  modulo operation  business strategy  statistical classification,6,90.94,81.67,80.47,84.36
+471,"['supply chain', 'sap erp', 'decision tree', 'mergers & acquisitions']",supply chain  sap erp  decision tree  mergers & acquisitions,4,100.0,67.28,86.13,84.47
+472,"['corporate bond', 'harmony', 'integral', 'guitar']",corporate bond  harmony  integral  guitar,4,75.68,78.22,93.34,82.42
+473,"['crisis', 'bioinformatics', 'debugging', 'personal advertisement', 'health system', 'parenting']",crisis  bioinformatics  debugging  personal advertisement  health system  parenting,6,81.09,81.46,87.87,83.47
+474,"['python syntax and semantics', 'business analytics', 'marketing mix', 'gene', 'front and back ends']",python syntax and semantics  business analytics  marketing mix  gene  front and back ends,5,70.62,64.93,62.46,66.0
+475,"['test case', 'user experience', 'education', 'privacy', 'circular economy', 'continuous function']",test case  user experience  education  privacy  circular economy  continuous function,6,51.4,99.67,61.76,70.95
+476,"['accuracy and precision', 'negotiation', 'language learning', 'user story', 'mergers & acquisitions']",accuracy and precision  negotiation  language learning  user story  mergers & acquisitions,5,72.34,71.68,78.69,74.24
+477,"['photography', 'law', 'perception', 'test case', 'convolution']",photography  law  perception  test case  convolution,5,84.79,85.33,68.0,79.37
+478,"['java (software platform)', 'trading', 'email writing', 'public-key cryptography', 'interpretation']",java (software platform)  trading  email writing  public-key cryptography  interpretation,5,72.99,78.39,72.02,74.47
+479,"['neuroscience', 'iteration', 'image processing', 'web application']",neuroscience  iteration  image processing  web application,4,94.29,80.89,83.82,86.33
+480,"['sustainable business', 'food security', 'jpeg', 'medicine', 'human computer interaction', 'mysql']",sustainable business  food security  jpeg  medicine  human computer interaction  mysql,6,82.95,89.08,77.17,83.07
+481,"['cloud platforms', 'storytelling', 'email', 'terrorism', 'solar energy']",cloud platforms  storytelling  email  terrorism  solar energy,5,59.44,79.8,67.18,68.81
+482,"['sources', 'apache', 'process', 'english grammar']",sources  apache  process  english grammar,4,68.66,82.04,89.86,80.18
+483,"['image processing', 'bookkeeping', 'online learning', 'regression analysis', 'corporate bond', 'web application']",image processing  bookkeeping  online learning  regression analysis  corporate bond  web application,6,75.26,78.71,95.43,83.13
+484,"['food science', 'general statistics', 'customer relationship management', 'path (variable)', 'meditation']",food science  general statistics  customer relationship management  path (variable)  meditation,5,77.89,100.0,81.79,86.56
+485,"['political science', 'thought', 'public-key cryptography']",political science  thought  public-key cryptography,3,53.87,84.04,79.57,72.49
+486,"['null coalescing operator', 'smart contract', 'representational state transfer', 'p-value', 'software engineering', 'art', 'marketing']",null coalescing operator  smart contract  representational state transfer  p-value  software engineering  art  marketing,7,90.48,83.08,73.34,82.3
+487,"['test case', 'wireless', 'business writing', 'climate change', 'funds', 'mapping', 'death']",test case  wireless  business writing  climate change  funds  mapping  death,7,60.31,72.49,64.79,65.86
+488,"['augmented reality', 'stock market', 'node.js', 'language', 'perception', 'cipher', 'adobe photoshop']",augmented reality  stock market  node.js  language  perception  cipher  adobe photoshop,7,68.03,82.06,95.04,81.71
+489,"['geometry', 'exercise', 'risk factor']",geometry  exercise  risk factor,3,79.74,60.65,80.34,73.57
+490,"['statistical analysis', 'systems design', 'sustainable business', 'evolution', 'plant', 'mechanical engineering', 'motivation']",statistical analysis  systems design  sustainable business  evolution  plant  mechanical engineering  motivation,7,89.36,67.68,73.39,76.81
+491,"['team management', 'reinforcement learning', 'css', 'listening', 'anthropology', 'python programming data-science machine-learning']",team management  reinforcement learning  css  listening  anthropology  python programming data-science machine-learning,6,75.18,65.58,82.78,74.51
+492,"['inflation', 'organizational culture', 'business writing']",inflation  organizational culture  business writing,3,73.55,80.03,64.35,72.64
+493,"['cost benefit analysis', 'logic gate', 'internet']",cost benefit analysis  logic gate  internet,3,69.75,83.67,70.53,74.65
+494,"['pricing', 'enabling', 'sap erp', 'python programming data-science machine-learning', 'logic gate']",pricing  enabling  sap erp  python programming data-science machine-learning  logic gate,5,95.72,70.2,77.7,81.21
+495,"['change management', 'phenomenon', 'predictive modelling', 'iteration', 'blockchain', 'instructional design']",change management  phenomenon  predictive modelling  iteration  blockchain  instructional design,6,86.19,57.98,53.87,66.01
+496,"['cloud storage', 'angular', 'linearity']",cloud storage  angular  linearity,3,56.69,90.15,68.38,71.74
+497,"['databases', 'forecasting', 'russian']",databases  forecasting  russian,3,100.0,68.23,77.21,81.81
+498,"['speech', 'data science', 'lambda calculus', 'statistical hypothesis testing']",speech  data science  lambda calculus  statistical hypothesis testing,4,93.51,99.07,99.74,97.44
+499,"['process management', 'film', 'nutrition', 'virtual reality', 'dnas', 'download']",process management  film  nutrition  virtual reality  dnas  download,6,89.5,87.29,82.11,86.3
+500,"['negotiation', 'application programming interfaces', 'usability', 'electrical engineering', 'population', 'terrorism']",negotiation  application programming interfaces  usability  electrical engineering  population  terrorism,6,84.34,68.39,65.18,72.64
+501,"['molecular biology', 'academic writing', 'epidemiology', 'employment', 'html', 'bioinformatics']",molecular biology  academic writing  epidemiology  employment  html  bioinformatics,6,74.96,72.96,69.56,72.49
+502,"['child', 'social media marketing', 'dynamic programming', 'mathematical model', 'jpeg', 'educational psychology', 'privacy']",child  social media marketing  dynamic programming  mathematical model  jpeg  educational psychology  privacy,7,83.36,86.46,76.06,81.96
+503,"['google cloud platform', 'random forest', 'security']",google cloud platform  random forest  security,3,92.73,61.3,72.68,75.57
+504,"['therapy', 'modulo operation', 'unix', 'music', 'teaching method']",therapy  modulo operation  unix  music  teaching method,5,66.4,52.6,74.01,64.34
+505,"['logic gate', 'machine learning data-science machine-learning', 'privacy']",logic gate  machine learning data-science machine-learning  privacy,3,73.54,93.16,82.57,83.09
+506,"['demand', 'informatics', 'use case', 'tensorflow', 'business strategy', 'consumer behaviour', 'internet of things']",demand  informatics  use case  tensorflow  business strategy  consumer behaviour  internet of things,7,62.71,97.25,89.65,83.2
+507,"['flask', 'interaction design', 'coaching']",flask  interaction design  coaching,3,81.99,72.28,63.49,72.58
+508,"['mechanical design', 'cost', 'risk factors', 'modulo operation']",mechanical design  cost  risk factors  modulo operation,4,70.53,88.06,97.62,85.4
+509,"['theory of relativity', 'copywriting', 'sustainability', 'mindfulness', 'path (variable)', 'download']",theory of relativity  copywriting  sustainability  mindfulness  path (variable)  download,6,93.52,69.13,61.56,74.74
+510,"['web development', 'social network', 'deployment environment', 'spreadsheet software', 'death', 'random forest']",web development  social network  deployment environment  spreadsheet software  death  random forest,6,76.69,53.78,78.88,69.78
+511,"['correlation and dependence', 'dynamic programming', 'interview', 'power electronics', 'user research']",correlation and dependence  dynamic programming  interview  power electronics  user research,5,73.23,69.41,55.86,66.17
+512,"['market segmentation', 'adaptation', 'pytorch']",market segmentation  adaptation  pytorch,3,81.16,68.61,60.96,70.24
+513,"['editing', 'missing data', 'stock', 'renewable energy']",editing  missing data  stock  renewable energy,4,40.53,74.67,96.27,70.49
+514,"['online learning', 'reason', 'organizational culture', 'piano', 'r&d management', 'debugging']",online learning  reason  organizational culture  piano  r&d management  debugging,6,94.94,69.51,67.77,77.41
+515,"['strategic management', 'approximation error', 'evaluation']",strategic management  approximation error  evaluation,3,80.63,63.02,78.62,74.09
+516,"['arcgis', 'health policy', 'experimental design', 'social network', 'i-deas']",arcgis  health policy  experimental design  social network  i-deas,5,84.19,89.72,73.8,82.57
+517,"['privacy', 'strategic planning', 'recurrent neural network', 'sound design']",privacy  strategic planning  recurrent neural network  sound design,4,72.56,64.46,65.08,67.37
+518,"['cloud infrastructure', 'supply chain management', 'cloud platforms', 'guitar', 'software engineering', 'mathematical optimization', 'software development process']",cloud infrastructure  supply chain management  cloud platforms  guitar  software engineering  mathematical optimization  software development process,7,72.28,79.41,85.96,79.22
+519,"['php', 'solar systems', 'ethics']",php  solar systems  ethics,3,65.36,92.91,71.75,76.67
+520,"['child', 'fundraising', 'informatics', 'arcgis', 'population', 'gradient']",child  fundraising  informatics  arcgis  population  gradient,6,74.74,66.03,45.91,62.23
+521,"['c programming', 'philosophy', 'collaboration', 'financial statement', 'english grammar']",c programming  philosophy  collaboration  financial statement  english grammar,5,85.61,83.84,71.62,80.36
+522,"['machine learning', 'unit testing', 'web', 'peering', 'dataflow', 'user (computing)', 'corporate bond']",machine learning  unit testing  web  peering  dataflow  user (computing)  corporate bond,7,75.8,81.19,56.25,71.08
+523,"['enabling', 'bible', ""student's t-distribution"", 'machine learning']",enabling  bible  student's t-distribution  machine learning,4,68.65,84.53,59.95,71.04
+524,"['human computer interaction', 'therapy', 'social psychology', 'decision making', 'javascript', 'income', 'identity management']",human computer interaction  therapy  social psychology  decision making  javascript  income  identity management,7,78.52,58.72,80.6,72.61
+525,"['gratitude', 'rstudio', 'causality', 'continuous function', 'operating systems', 'bible', 'healthcare management']",gratitude  rstudio  causality  continuous function  operating systems  bible  healthcare management,7,74.57,55.62,88.98,73.06
+526,"['conflict resolution', 'game design', 'crisis', 'java annotation']",conflict resolution  game design  crisis  java annotation,4,66.18,65.28,77.41,69.62
+527,"['mysql', 'random forest', 'cost benefit analysis', 'switches']",mysql  random forest  cost benefit analysis  switches,4,88.78,62.81,75.74,75.78
+528,"['video game development', 'ordered pair', 'media market', 'predictive analytics', 'business analysis']",video game development  ordered pair  media market  predictive analytics  business analysis,5,80.15,83.32,77.12,80.19
+529,"['numpy', 'running', 'history']",numpy  running  history,3,70.6,65.07,76.03,70.57
+530,"['prevention', 'r programming', 'keras', 'systems thinking', '3d modeling']",prevention  r programming  keras  systems thinking  3d modeling,5,62.13,40.0,80.24,60.79
+531,"['probability', 'web development', 'market research']",probability  web development  market research,3,85.85,46.64,62.88,65.13
+532,"['smart contract', 'neuroscience', 'ethics']",smart contract  neuroscience  ethics,3,82.43,99.69,75.25,85.79
+533,"['entrepreneurship', 'recruitment', 'guitar', 'java programming', 'human voice', 'leadership and management business leadership-and-management']",entrepreneurship  recruitment  guitar  java programming  human voice  leadership and management business leadership-and-management,6,66.26,72.81,91.5,76.86
+534,"['switches', 'computer-aided design', 'strategic planning', 'pytorch', 'linearity', 'autodesk', 'authority']",switches  computer-aided design  strategic planning  pytorch  linearity  autodesk  authority,7,67.25,65.41,69.21,67.29
+535,"['video editing', 'probability density function', 'algorithms']",video editing  probability density function  algorithms,3,63.56,76.47,94.5,78.18
+536,"['data mining', 'php', 'principle']",data mining  php  principle,3,78.88,71.97,71.5,74.12
+537,"['peering', 'emotional intelligence', 'conflict resolution']",peering  emotional intelligence  conflict resolution,3,56.24,85.6,74.07,71.97
+538,"['data model', 'health informatics', 'case study', 'marketing mix', 'game theory']",data model  health informatics  case study  marketing mix  game theory,5,72.83,100.0,78.59,83.81
+539,"['maximization (psychology)', 'dataflow', 'banking']",maximization (psychology)  dataflow  banking,3,65.98,69.88,88.78,74.88
+540,"['version control', 'interaction design', 'finance business finance', 'penetration test', 'cancer', 'causality']",version control  interaction design  finance business finance  penetration test  cancer  causality,6,76.36,57.74,86.03,73.38
+541,"['epidemic', 'public health', 'business case']",epidemic  public health  business case,3,66.98,97.48,87.96,84.14
+542,"['test automation', 'exploratory data analysis', 'sales management', 'planning']",test automation  exploratory data analysis  sales management  planning,4,69.63,90.37,75.81,78.61
+543,"['active listening', 'linearity', 'competitiveness']",active listening  linearity  competitiveness,3,85.23,80.82,64.84,76.96
+544,"['conflict resolution', 'public speaking', 'brand', 'family', 'mindfulness', 'c++']",conflict resolution  public speaking  brand  family  mindfulness  c++,6,67.28,87.36,70.98,75.21
+545,"['chinese language', 'internet of things', 'mathematics']",chinese language  internet of things  mathematics,3,70.16,63.54,80.08,71.26
+546,"['convolutional neural network', 'microsoft excel', 'constitution', 'creative writing', 'bookkeeping']",convolutional neural network  microsoft excel  constitution  creative writing  bookkeeping,5,99.75,62.19,75.29,79.08
+547,"['stock market', 'active listening', 'unit testing', 'databases', 'photography', 'machine learning', 'epidemic']",stock market  active listening  unit testing  databases  photography  machine learning  epidemic,7,91.95,74.04,80.43,82.14
+548,"['operating systems', 'user (computing)', 'physiology', 'ethereum']",operating systems  user (computing)  physiology  ethereum,4,62.25,80.14,72.75,71.72
+549,"['chemistry', 'correlation and dependence', 'computer animation']",chemistry  correlation and dependence  computer animation,3,86.83,89.25,100.0,92.03
+550,"['missing data', 'machine learning', 'penetration test', 'interview', 'correlation and dependence', 'fundraising', 'healthcare management']",missing data  machine learning  penetration test  interview  correlation and dependence  fundraising  healthcare management,7,81.96,78.91,77.33,79.4
+551,"['funds', 'sports', 'torque']",funds  sports  torque,3,70.76,79.06,71.46,73.76
+552,"['troubleshooting', 'humanitarian', 'apache', 'integral', 'employment', 'sales', 'trigonometric integral']",troubleshooting  humanitarian  apache  integral  employment  sales  trigonometric integral,7,77.02,90.81,62.92,76.92
+553,"['e-nable', 'music', 'inflation', 'beam robotics', 'flow network', 'recruitment', 'mobile development']",e-nable  music  inflation  beam robotics  flow network  recruitment  mobile development,7,88.68,90.81,73.58,84.36
+554,"['fluid mechanics', 'regression analysis', 'wireless']",fluid mechanics  regression analysis  wireless,3,49.54,67.71,90.56,69.27
+555,"['brand', 'security', 'aerospace engineering', 'marketing mix', 'investment', 'conflict resolution', 'modeling']",brand  security  aerospace engineering  marketing mix  investment  conflict resolution  modeling,7,74.73,63.01,68.94,68.89
+556,"['parent', 'mathematical model', 'solar systems', 'demand', 'project plan', 'breach (security exploit)', 'analysis']",parent  mathematical model  solar systems  demand  project plan  breach (security exploit)  analysis,7,85.09,81.56,72.13,79.59
+557,"['booking', 'agile software development', 'google cloud platform', 'essay writing', 'asset', 'big data', 'neuroscience']",booking  agile software development  google cloud platform  essay writing  asset  big data  neuroscience,7,70.6,70.3,63.93,68.28
+558,"['hypothesis', 'virtual machine', 'relational database', 'organizational culture', 'path (variable)', 'numbers (spreadsheet)', 'business plan']",hypothesis  virtual machine  relational database  organizational culture  path (variable)  numbers (spreadsheet)  business plan,7,94.38,71.13,89.61,85.04
+559,"['social network', 'user (computing)', 'customer experience', 'history', 'business process', 'international law', 'business communication']",social network  user (computing)  customer experience  history  business process  international law  business communication,7,93.26,86.98,69.82,83.35
+560,"['emotions', 'data analysis data-science data-analysis', 'social media marketing', 'justice', 'motivation', 'teaching', 'web design']",emotions  data analysis data-science data-analysis  social media marketing  justice  motivation  teaching  web design,7,79.84,74.71,64.16,72.9
+561,"['international law', 'personality', 'flask']",international law  personality  flask,3,78.89,60.85,89.25,76.33
+562,"['foreign policy', 'c dynamic memory allocation', 'persona (user experience)']",foreign policy  c dynamic memory allocation  persona (user experience),3,69.42,77.41,78.4,75.08
+563,"['presentation', 'unix shells', 'type i and type ii errors']",presentation  unix shells  type i and type ii errors,3,71.89,82.04,69.3,74.41
+564,"['internality', 'design thinking', 'communication']",internality  design thinking  communication,3,85.46,58.85,76.52,73.61
+565,"['convolutional neural network', 'advertising', 'data visualization']",convolutional neural network  advertising  data visualization,3,98.27,63.0,66.87,76.04
+566,"['logic', 'scaling', 'safety', 'ggplot2', 'death', 'maximization (psychology)']",logic  scaling  safety  ggplot2  death  maximization (psychology),6,81.17,77.15,79.21,79.18
+567,"['harmony', 'collaboration', 'approximation', 'leadership']",harmony  collaboration  approximation  leadership,4,80.87,82.62,88.32,83.93
+568,"['health', 'schedule', 'biology', 'gradient', 'swift programming', 'video game development']",health  schedule  biology  gradient  swift programming  video game development,6,79.92,72.1,83.07,78.36
+569,"['recursion', 'pricing', 'risk factors']",recursion  pricing  risk factors,3,97.8,73.41,63.31,78.17
+570,"['behavior', 'regression analysis', 'strategic thinking', 'death', 'mathematics']",behavior  regression analysis  strategic thinking  death  mathematics,5,88.28,73.56,48.93,70.26
+571,"['genomics', 'chinese language', 'surgery', 'cluster analysis']",genomics  chinese language  surgery  cluster analysis,4,85.17,68.58,73.91,75.89
+572,"['risk', '3d modeling', 'augmented reality', 'aerospace engineering']",risk  3d modeling  augmented reality  aerospace engineering,4,78.98,77.29,83.51,79.93
+573,"['authority', 'project planning', 'matching', 'mindfulness']",authority  project planning  matching  mindfulness,4,69.77,81.16,71.89,74.27
+574,"['disaster', 'arrays', 'sports', 'pandas']",disaster  arrays  sports  pandas,4,83.87,82.38,63.77,76.67
+575,"['java annotation', 'funds', 'organizational structure', 'japanese language']",java annotation  funds  organizational structure  japanese language,4,88.03,68.57,84.7,80.43
+576,"['business case', 'supply chain', 'measurement', 'communication', 'relative change and difference']",business case  supply chain  measurement  communication  relative change and difference,5,79.41,97.06,72.32,82.93
+577,"['disaster', 'experience', 'russian']",disaster  experience  russian,3,70.81,74.77,71.36,72.31
+578,"['null coalescing operator', 'bookkeeping', 'product management']",null coalescing operator  bookkeeping  product management,3,84.6,55.6,62.36,67.52
+579,"['international relations', 'keras', 'c dynamic memory allocation', 'sports', 'principle']",international relations  keras  c dynamic memory allocation  sports  principle,5,62.19,86.4,95.53,81.37
+580,"['matlab', 'email writing', 'image processing']",matlab  email writing  image processing,3,73.75,72.97,75.84,74.19
+581,"['interact', 'value proposition', 'food security', 'product development', 'matlab', 'ternary conditional operator', 'recommender systems']",interact  value proposition  food security  product development  matlab  ternary conditional operator  recommender systems,7,88.94,63.87,77.86,76.89
+582,"['solar systems', 'framing', 'css', 'accuracy and precision']",solar systems  framing  css  accuracy and precision,4,86.7,81.01,77.27,81.66
+583,"['animal', 'finance', 'software', 'load balancing', 'web page', 'adaptation']",animal  finance  software  load balancing  web page  adaptation,6,87.01,42.56,83.13,70.9
+584,"['.properties', 'medicine', 'interest', 'choice', 'employment']",.properties  medicine  interest  choice  employment,5,67.15,53.03,81.13,67.11
+585,"['fintech', 'pandas', 'reason', 'big data', 'cost benefit analysis', 'html5', 'case study']",fintech  pandas  reason  big data  cost benefit analysis  html5  case study,7,91.48,73.35,86.43,83.76
+586,"['film', 'sales strategy', 'operations management']",film  sales strategy  operations management,3,94.35,90.78,94.68,93.27
+587,"['probability', 'business strategy', 'systems design', 'causality', 'renewable energy']",probability  business strategy  systems design  causality  renewable energy,5,83.91,75.91,55.78,71.86
+588,"['web service', 'natural language', 'business', 'terrorism']",web service  natural language  business  terrorism,4,72.05,64.88,100.0,78.98
+589,"['biodiversity', 'personal advertisement', 'computer-aided design', 'financial statement', 'image processing', 'global', 'interview']",biodiversity  personal advertisement  computer-aided design  financial statement  image processing  global  interview,7,72.89,76.48,81.62,77.0
+590,"['justice', 'ios development', 'predictive modelling', 'health', 'finance business finance', 'business']",justice  ios development  predictive modelling  health  finance business finance  business,6,75.52,95.34,67.53,79.46
+591,"['convolution', 'target audience', 'climate change', 'data analysis data-science data-analysis']",convolution  target audience  climate change  data analysis data-science data-analysis,4,77.34,66.09,59.16,67.53
+592,"['databases', 'population', 'professional development']",databases  population  professional development,3,67.66,74.56,69.85,70.69
+593,"['object-oriented programming', 'competitiveness', 'social media', 'market research', 'encryption']",object-oriented programming  competitiveness  social media  market research  encryption,5,66.69,58.12,74.0,66.27
+594,"['interfaces', 'procurement', 'graphic design', 'communication', 'calibration', 'data mining']",interfaces  procurement  graphic design  communication  calibration  data mining,6,56.94,84.12,75.99,72.35
+595,"['trading', 'astronomy', 'essay writing', 'keras', 'cross-cultural communication']",trading  astronomy  essay writing  keras  cross-cultural communication,5,57.51,71.29,65.97,64.92
+596,"['funds', 'market (economics)', 'negotiation']",funds  market (economics)  negotiation,3,78.83,91.09,52.5,74.14
+597,"['average', 'innovation', 'github', 'design pattern', 'approximation error', 'nutrition', 'predictive modelling']",average  innovation  github  design pattern  approximation error  nutrition  predictive modelling,7,76.38,73.08,83.06,77.5
+598,"['sources', 'game design', 'cash flow', 'process management', 'child', 'correlation and dependence', 'compiler']",sources  game design  cash flow  process management  child  correlation and dependence  compiler,7,77.56,65.98,71.17,71.57
+599,"['biodiversity', 'exercise', 'computer-aided design']",biodiversity  exercise  computer-aided design,3,65.45,87.91,75.26,76.21
