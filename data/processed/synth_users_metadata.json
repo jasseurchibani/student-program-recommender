@@ -1,0 +1,101 @@
+{
+  "generation_date": "2026-01-12T17:28:06.113797",
+  "num_users": 400,
+  "num_clusters": 7,
+  "total_unique_skills": 655,
+  "skills_per_user": {
+    "min": 4,
+    "max": 10,
+    "mean": 6.4775,
+    "median": 6.0
+  },
+  "experience_distribution": {
+    "1": 177,
+    "2": 401,
+    "3": 870,
+    "4": 640,
+    "5": 503
+  },
+  "top_20_user_skills": [
+    {
+      "skill": "leadership and management",
+      "count": 27
+    },
+    {
+      "skill": "computer programming",
+      "count": 21
+    },
+    {
+      "skill": "python programming",
+      "count": 20
+    },
+    {
+      "skill": "analysis",
+      "count": 20
+    },
+    {
+      "skill": "project",
+      "count": 19
+    },
+    {
+      "skill": "machine learning",
+      "count": 19
+    },
+    {
+      "skill": "modeling",
+      "count": 17
+    },
+    {
+      "skill": "language",
+      "count": 17
+    },
+    {
+      "skill": "strategy",
+      "count": 16
+    },
+    {
+      "skill": "databases",
+      "count": 15
+    },
+    {
+      "skill": "euler's totient function",
+      "count": 15
+    },
+    {
+      "skill": "web",
+      "count": 15
+    },
+    {
+      "skill": "data analysis",
+      "count": 14
+    },
+    {
+      "skill": "software",
+      "count": 12
+    },
+    {
+      "skill": "regression",
+      "count": 11
+    },
+    {
+      "skill": "cloud computing",
+      "count": 11
+    },
+    {
+      "skill": "market (economics)",
+      "count": 11
+    },
+    {
+      "skill": "writing",
+      "count": 10
+    },
+    {
+      "skill": "deep learning",
+      "count": 10
+    },
+    {
+      "skill": ".properties",
+      "count": 10
+    }
+  ]
+}

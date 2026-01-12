@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-01-11T17:48:28.322198Z",
+  "catalog_rows": 3408,
+  "tfidf_shape": [
+    3408,
+    53323
+  ],
+  "text_columns": [
+    "Course Name",
+    "University",
+    "Course Description",
+    "skills_cleaned"
+  ],
+  "catalog_source": "c:\\Users\\Jed\\Desktop\\9raya\\ML\\data\\processed\\courses_with_id.csv",
+  "sklearn_version": "1.8.0"
+}

@@ -1,6 +1,46 @@
 // API Configuration
 const API_BASE_URL = 'http://127.0.0.1:8000';
 
+// Skills data
+let availableSkills = [];
+let selectedSkills = [];
+
+// Load skills on page load
+async function loadSkills() {
+    try {
+        const response = await fetch('filtered_skills.txt');
+        const text = await response.text();
+        availableSkills = text.split('\n')
+            .map(skill => skill.trim())
+            .filter(skill => skill.length > 0)
+            .sort();
+        console.log(`✓ Loaded ${availableSkills.length} skills`);
+        populateSkillSelect();
+    } catch (error) {
+        console.error('⚠️ Error loading skills file, using fallback list:', error);
+        // Fallback to comprehensive skills list
+        availableSkills = [
+            'python', 'javascript', 'java', 'c++', 'data analysis', 'machine learning',
+            'web development', 'mobile development', 'design', 'marketing', 'adobe photoshop',
+            'project management', 'business', 'finance', 'writing', 'communication',
+            'leadership', 'research', 'biology', 'chemistry', 'physics', 'mathematics',
+            'statistics', 'economics', 'accounting', 'management', 'sales', 'creativity',
+            'problem solving', 'critical thinking', 'teamwork', 'public speaking',
+            'social media', 'content creation', 'video editing', 'graphic design',
+            'ui/ux design', 'database', 'sql', 'cloud computing', 'cybersecurity',
+            'artificial intelligence', 'deep learning', 'neural networks', 'computer vision',
+            'natural language processing', 'robotics', 'embedded systems', 'electronics',
+            'mechanical engineering', 'civil engineering', 'architecture', 'art history',
+            'music theory', 'film production', 'photography', 'creative writing'
+        ].sort();
+        console.log(`✓ Using ${availableSkills.length} fallback skills`);
+        populateSkillSelect();
+    }
+}
+
+// Initialize on page load
+loadSkills();
+
 // DOM Elements
 const form = document.getElementById('recommendation-form');
 const inputSection = document.getElementById('input-section');
@@ -11,6 +51,122 @@ const errorText = document.getElementById('error-text');
 const recommendationsContainer = document.getElementById('recommendations-container');
 const resetBtn = document.getElementById('reset-btn');
 const submitBtn = document.getElementById('submit-btn');
+
+// Skill input elements
+const skillSelect = document.getElementById('skill-select');
+const experienceSelect = document.getElementById('experience-select');
+const addSkillBtn = document.getElementById('add-skill-btn');
+const selectedSkillsContainer = document.getElementById('selected-skills');
+const interestsHiddenInput = document.getElementById('interests');
+
+// Populate skill select dropdown
+function populateSkillSelect() {
+    availableSkills.forEach(skill => {
+        const option = document.createElement('option');
+        option.value = skill;
+        option.textContent = skill;
+        skillSelect.appendChild(option);
+    });
+}
+
+// Add skill button click handler
+addSkillBtn.addEventListener('click', () => {
+    const skillName = skillSelect.value;
+    const experienceLevel = parseInt(experienceSelect.value);
+    
+    if (!skillName) {
+        return;
+    }
+    
+    addSkill(skillName, experienceLevel);
+    
+    // Reset selects
+    skillSelect.value = '';
+    experienceSelect.value = '3';
+    
+    // Update select options to hide added skill
+    updateSkillSelectOptions();
+});
+
+// Update skill select options to hide already selected skills
+function updateSkillSelectOptions() {
+    Array.from(skillSelect.options).forEach(option => {
+        if (option.value && selectedSkills.some(s => s.name === option.value)) {
+            option.style.display = 'none';
+        } else {
+            option.style.display = '';
+        }
+    });
+}
+
+// Add skill with experience level
+function addSkill(skillName, experienceLevel = 3) {
+    // Check if already added
+    if (selectedSkills.some(s => s.name === skillName)) {
+        return;
+    }
+    
+    // Add to selected skills
+    selectedSkills.push({
+        name: skillName,
+        experience: experienceLevel
+    });
+    
+    renderSelectedSkills();
+    updateInterestsInput();
+}
+
+// Remove skill
+function removeSkill(skillName) {
+    selectedSkills = selectedSkills.filter(s => s.name !== skillName);
+    renderSelectedSkills();
+    updateInterestsInput();
+    updateSkillSelectOptions();
+}
+
+// Update skill experience
+function updateSkillExperience(skillName, newExperience) {
+    const skill = selectedSkills.find(s => s.name === skillName);
+    if (skill) {
+        skill.experience = parseInt(newExperience);
+        updateInterestsInput();
+    }
+}
+
+// Render selected skills
+function renderSelectedSkills() {
+    if (selectedSkills.length === 0) {
+        selectedSkillsContainer.innerHTML = '<div class="no-skills-message">No skills selected yet. Choose a skill and click + to add.</div>';
+        return;
+    }
+    
+    const experienceLabels = {
+        1: '🌱 Beginner',
+        2: '📚 Basic',
+        3: '💼 Intermediate',
+        4: '🚀 Advanced',
+        5: '⭐ Expert'
+    };
+    
+    selectedSkillsContainer.innerHTML = selectedSkills.map(skill => `
+        <div class="skill-tag">
+            <span class="skill-tag-name">${skill.name}</span>
+            <span class="skill-tag-level">${experienceLabels[skill.experience]}</span>
+            <button type="button" class="skill-tag-remove" onclick="removeSkill('${skill.name}')">&times;</button>
+        </div>
+    `).join('');
+}
+
+// Update hidden interests input
+function updateInterestsInput() {
+    // Create weighted interest string based on experience levels
+    const weightedSkills = selectedSkills.map(skill => {
+        // Repeat skill name based on experience level for more weight
+        return Array(skill.experience).fill(skill.name).join(' ');
+    }).join(', ');
+    
+    interestsHiddenInput.value = weightedSkills;
+}
 
 // Grade inputs - update display on change
 const gradeInputs = document.querySelectorAll('input[type="number"]');
@@ -34,10 +190,16 @@ form.addEventListener('submit', async (e) => {
     const scienceGrade = parseFloat(formData.get('science_grade'));
     const languageGrade = parseFloat(formData.get('language_grade'));
     const k = parseInt(formData.get('k'));
+    const modelType = formData.get('model_type') || 'hybrid';
     
     // Validate
     if (!interests.trim()) {
-        showError('Please enter your interests');
+        showError('Please add at least one skill with experience level');
+        return;
+    }
+    
+    if (selectedSkills.length === 0) {
+        showError('Please add at least one skill with experience level');
         return;
     }
     
@@ -56,8 +218,8 @@ form.addEventListener('submit', async (e) => {
     loading.classList.remove('hidden');
     
     try {
-        // Call API
-        const response = await fetch(`${API_BASE_URL}/recommend?k=${k}&approach=hybrid`, {
+        // Call API with selected model
+        const response = await fetch(`${API_BASE_URL}/recommend?k=${k}&approach=${modelType}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -72,8 +234,11 @@ form.addEventListener('submit', async (e) => {
         
         const data = await response.json();
         
-        // Display results
-        displayRecommendations(data.recommendations);
+        // Display results with model info
+        displayRecommendations(data.recommendations, data.approach || modelType);
+        
+        // Update footer with model used
+        updateFooter(data.approach || modelType);
         
         // Hide loading, show results
         loading.classList.add('hidden');
@@ -87,8 +252,21 @@ form.addEventListener('submit', async (e) => {
 });
 
 // Display recommendations
-function displayRecommendations(recommendations) {
+function displayRecommendations(recommendations, approach) {
     recommendationsContainer.innerHTML = '';
+    
+    // Add model info banner
+    const modelInfo = document.createElement('div');
+    modelInfo.className = 'model-info-banner';
+    const modelNames = {
+        'hybrid': '🔀 Hybrid Model (Content-Based + Collaborative)',
+        'content-based': '📚 Content-Based Model (TF-IDF Feature Matching)',
+        'collaborative': '👥 Collaborative Filtering (SVD Matrix Factorization)'
+    };
+    modelInfo.innerHTML = `
+        <strong>Model Used:</strong> ${modelNames[approach] || approach}
+    `;
+    recommendationsContainer.appendChild(modelInfo);
     
     recommendations.forEach((rec, index) => {
         const card = createRecommendationCard(rec, index + 1);
@@ -103,6 +281,8 @@ function createRecommendationCard(rec, rank) {
     
     // Parse skills into tags
     const skills = rec.skills.split(' ').filter(s => s.trim());
+
+    const shortDescription = truncateSentences(rec.description, 3);
     
     card.innerHTML = `
         <div class="recommendation-header">
@@ -111,7 +291,7 @@ function createRecommendationCard(rec, rank) {
                     #${rank} RECOMMENDATION
                 </div>
                 <h3 class="program-title">${rec.program_name}</h3>
-                <p class="program-description">${rec.description}</p>
+                <p class="program-description">${shortDescription}</p>
             </div>
             <div class="score-badge">
                 ${(rec.score * 100).toFixed(0)}% Match
@@ -137,6 +317,18 @@ function createRecommendationCard(rec, rank) {
     `;
     
     return card;
+}
+
+function truncateSentences(text, maxSentences = 3) {
+    if (text === null || text === undefined) return '';
+    const clean = String(text).replace(/\s+/g, ' ').trim();
+    if (!clean) return '';
+
+    const matches = clean.match(/[^.!?]+[.!?]+(?=\s|$)|[^.!?]+$/g) || [];
+    const sentences = matches.map(s => s.trim()).filter(Boolean);
+
+    if (sentences.length <= maxSentences) return clean;
+    return `${sentences.slice(0, maxSentences).join(' ').trim()} ...`;
 }
 
 // Submit feedback
@@ -178,8 +370,10 @@ resetBtn.addEventListener('click', () => {
     resultsSection.classList.add('hidden');
     inputSection.classList.remove('hidden');
     form.reset();
-    
-    // Reset grade displays
+        // Clear selected skills
+    selectedSkills = [];
+    renderSelectedSkills();
+        // Reset grade displays
     gradeInputs.forEach(input => {
         const display = input.nextElementSibling;
         if (display && display.classList.contains('grade-display')) {
@@ -199,31 +393,56 @@ function showError(message) {
 // Test cases
 const testCases = {
     cs: {
-        interests: "technology, artificial intelligence, programming, software development, algorithms",
+        skills: [
+            { name: 'python', experience: 4 },
+            { name: 'machine learning', experience: 3 },
+            { name: 'data analysis', experience: 3 },
+            { name: 'algorithms', experience: 3 }
+        ],
         math_grade: 92,
         science_grade: 88,
         language_grade: 75
     },
     bio: {
-        interests: "biology, chemistry, medicine, healthcare, genetics, research",
+        skills: [
+            { name: 'biology', experience: 4 },
+            { name: 'research', experience: 3 },
+            { name: 'chemistry', experience: 3 },
+            { name: 'genetics', experience: 2 }
+        ],
         math_grade: 78,
         science_grade: 95,
         language_grade: 82
     },
     business: {
-        interests: "economics, finance, management, marketing, entrepreneurship",
+        skills: [
+            { name: 'finance', experience: 3 },
+            { name: 'marketing', experience: 3 },
+            { name: 'management', experience: 2 },
+            { name: 'economics', experience: 3 }
+        ],
         math_grade: 85,
         science_grade: 72,
         language_grade: 88
     },
     arts: {
-        interests: "design, creativity, visual arts, media, communication, storytelling",
+        skills: [
+            { name: 'design', experience: 4 },
+            { name: 'adobe photoshop', experience: 4 },
+            { name: 'creativity', experience: 4 },
+            { name: 'visual communication', experience: 3 }
+        ],
         math_grade: 70,
         science_grade: 68,
         language_grade: 94
     },
     engineering: {
-        interests: "mechanics, robotics, electronics, physics, problem solving, innovation",
+        skills: [
+            { name: 'engineering', experience: 3 },
+            { name: 'mathematics', experience: 4 },
+            { name: 'physics', experience: 4 },
+            { name: 'problem solving', experience: 4 }
+        ],
         math_grade: 93,
         science_grade: 90,
         language_grade: 72
@@ -235,8 +454,15 @@ function fillTestCase(testName) {
     const test = testCases[testName];
     if (!test) return;
     
-    // Fill form
-    document.getElementById('interests').value = test.interests;
+    // Clear existing skills
+    selectedSkills = [];
+    
+    // Add test skills
+    test.skills.forEach(skill => {
+        addSkill(skill.name, skill.experience);
+    });
+    
+    // Fill grades
     document.getElementById('math_grade').value = test.math_grade;
     document.getElementById('science_grade').value = test.science_grade;
     document.getElementById('language_grade').value = test.language_grade;
@@ -255,6 +481,17 @@ function fillTestCase(testName) {
     setTimeout(() => {
         form.style.border = '';
     }, 1500);
+}
+
+// Update footer with model information
+function updateFooter(approach) {
+    const footerText = document.getElementById('footer-text');
+    const modelNames = {
+        'hybrid': 'Hybrid Recommendation System (Content-Based + Collaborative)',
+        'content-based': 'Content-Based Recommendation (TF-IDF)',
+        'collaborative': 'Collaborative Filtering (SVD Matrix Factorization)'
+    };
+    footerText.textContent = `Powered by ${modelNames[approach] || 'Hybrid Recommendation System'}`;
 }
 
 // Hide error

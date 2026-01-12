@@ -1,0 +1,28 @@
+{
+  "generation_date": "2026-01-12T17:35:55.369949",
+  "total_users": 400,
+  "total_courses": 3408,
+  "total_enrollments": 3280,
+  "avg_enrollments_per_user": 8.2,
+  "distribution": {
+    "high_match_target": "80%",
+    "random_target": "10%",
+    "low_match_target": "10%",
+    "high_match_actual": "57.26%",
+    "random_actual": "30.55%",
+    "low_match_actual": "12.20%"
+  },
+  "rating_stats": {
+    "overall_mean": 3.6710030487804883,
+    "overall_std": 0.9171825269437196,
+    "high_match_mean": 4.29895101171459,
+    "random_mean": 3.0305588822355287,
+    "low_match_mean": 2.3271
+  },
+  "enrollments_per_user": {
+    "min": 4,
+    "max": 12,
+    "mean": 8.2,
+    "median": 8.0
+  }
+}

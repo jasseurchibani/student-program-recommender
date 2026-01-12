@@ -15,8 +15,12 @@ INTERACTIONS_FILE = DATA_DIR / "raw" / "interactions.csv"
 # Model files
 TFIDF_VECTORIZER = MODEL_DIR / "tfidf.pkl"
 TFIDF_MATRIX = MODEL_DIR / "program_tfidf.pkl"
-CF_MODEL = MODEL_DIR / "cf_svd.pkl"
-HYBRID_MODEL = MODEL_DIR / "hybrid_recommender.pkl"
+CF_MODEL = MODEL_DIR / "collaborative" / "svd_model.joblib"
+HYBRID_MODEL = MODEL_DIR / "hybrid" / "hybrid_model.joblib"
+
+# Content-based course recommender artifacts (from notebooks)
+TFIDF_ARTIFACTS = MODEL_DIR / "content_based" / "tfidf_artifacts.joblib"
+COURSES_FILE_PROCESSED = DATA_DIR / "processed" / "courses_with_id.csv"
 
 # Feedback log
 FEEDBACK_LOG = DATA_DIR / "processed" / "feedback_log.csv"

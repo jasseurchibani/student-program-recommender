@@ -1,0 +1,29 @@
+{
+  "model_type": "SVD Matrix Factorization",
+  "latent_factors": 20,
+  "train_rmse": 0.7357674666614622,
+  "train_mae": 0.5708274619051663,
+  "test_rmse": 1.015112460545144,
+  "test_mae": 0.7913102393735946,
+  "n_users": 400,
+  "n_courses": 2008,
+  "n_train_ratings": 2726,
+  "n_test_ratings": 554,
+  "ranking_metrics": {
+    "ndcg@5": 0.5294331095982161,
+    "ndcg@10": 0.5294331095982161,
+    "ndcg@20": 0.5294331095982161
+  },
+  "precision_metrics": {
+    "precision@5": 0.131,
+    "precision@10": 0.0655,
+    "precision@20": 0.03275
+  },
+  "engagement_metrics": {
+    "avg_click_through_rate": 0.25089952833092627,
+    "avg_acceptance_rate": 0.39986383208070714,
+    "avg_conversion_rate": 0.10486095443767315,
+    "avg_satisfaction_score": 3.6619025365616977
+  },
+  "trained_at": "2026-01-12T17:56:34.096654"
+}

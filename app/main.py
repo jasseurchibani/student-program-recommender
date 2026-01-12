@@ -73,12 +73,25 @@ async def get_recommendations(
         List of recommended programs with explanations
     """
     try:
+        # Normalize approach coming from UI/query params
+        approach = (approach or "hybrid").strip().lower()
+        if approach in {"content", "content_based", "contentbased"}:
+            approach = "content-based"
+        if approach in {"cf", "collab", "collaborative-filtering", "collaborative_filtering"}:
+            approach = "collaborative"
+        if approach not in {"content-based", "collaborative", "hybrid"}:
+            raise HTTPException(status_code=400, detail=f"Unknown approach '{approach}'.")
+
         # Ensure models are loaded
         if not engine.loaded:
             engine.load_models()
         
+        print(f"[API] Received request with approach: {approach}")
+        print(f"[API] User interests: {profile.interests[:100]}...")
+        
         # Generate recommendations based on approach
         if approach == "content-based":
+            print("[API] Routing to CONTENT-BASED recommendations")
             recs = engine.content_based_recommendations(profile.interests, k=k)
             recommendations = []
             for program_id, score, explanation in recs:
@@ -93,30 +106,82 @@ async def get_recommendations(
                 ))
         
         elif approach == "collaborative":
+            print("[API] Routing to COLLABORATIVE FILTERING recommendations")
+            # For new users without user_id, simulate collaborative filtering
             if not profile.user_id:
-                raise HTTPException(
-                    status_code=400,
-                    detail="user_id required for collaborative filtering"
-                )
-            recs = engine.collaborative_recommendations(profile.user_id, k=k)
-            if not recs:
-                raise HTTPException(
-                    status_code=404,
-                    detail="User not found in training data. Try hybrid or content-based approach."
-                )
-            recommendations = []
-            for program_id, score, explanation in recs:
-                program = engine.programs_df[engine.programs_df['program_id'] == program_id].iloc[0]
-                recommendations.append(Recommendation(
-                    program_id=program_id,
-                    program_name=program['name'],
-                    description=program['description'],
-                    skills=program.get('tags_text', program.get('skills', '')),
-                    score=score,
-                    explanation=explanation
-                ))
+                recs = engine.new_user_collaborative_recommendations(profile.interests, k=k)
+                if not recs:
+                    # Fallback to content-based if CF model not available
+                    recs = engine.content_based_recommendations(profile.interests, k=k)
+                    recommendations = []
+                    for program_id, score, explanation in recs:
+                        program = engine.programs_df[engine.programs_df['program_id'] == program_id].iloc[0]
+                        recommendations.append(Recommendation(
+                            program_id=program_id,
+                            program_name=program['name'],
+                            description=program['description'],
+                            skills=program.get('tags_text', program.get('skills', '')),
+                            score=score,
+                            explanation=explanation
+                        ))
+                else:
+                    recommendations = []
+                    for program_id, score, explanation in recs:
+                        program = engine.programs_df[engine.programs_df['program_id'] == program_id].iloc[0]
+                        recommendations.append(Recommendation(
+                            program_id=program_id,
+                            program_name=program['name'],
+                            description=program['description'],
+                            skills=program.get('tags_text', program.get('skills', '')),
+                            score=score,
+                            explanation=explanation
+                        ))
+            else:
+                recs = engine.collaborative_recommendations(profile.user_id, k=k)
+                if not recs:
+                    # User not in training data, use new user approach
+                    recs = engine.new_user_collaborative_recommendations(profile.interests, k=k)
+                    if not recs:
+                        # Final fallback to content-based
+                        recs = engine.content_based_recommendations(profile.interests, k=k)
+                        recommendations = []
+                        for program_id, score, explanation in recs:
+                            program = engine.programs_df[engine.programs_df['program_id'] == program_id].iloc[0]
+                            recommendations.append(Recommendation(
+                                program_id=program_id,
+                                program_name=program['name'],
+                                description=program['description'],
+                                skills=program.get('tags_text', program.get('skills', '')),
+                                score=score,
+                                explanation=explanation
+                            ))
+                    else:
+                        recommendations = []
+                        for program_id, score, explanation in recs:
+                            program = engine.programs_df[engine.programs_df['program_id'] == program_id].iloc[0]
+                            recommendations.append(Recommendation(
+                                program_id=program_id,
+                                program_name=program['name'],
+                                description=program['description'],
+                                skills=program.get('tags_text', program.get('skills', '')),
+                                score=score,
+                                explanation=explanation
+                            ))
+                else:
+                    recommendations = []
+                    for program_id, score, explanation in recs:
+                        program = engine.programs_df[engine.programs_df['program_id'] == program_id].iloc[0]
+                        recommendations.append(Recommendation(
+                            program_id=program_id,
+                            program_name=program['name'],
+                            description=program['description'],
+                            skills=program.get('tags_text', program.get('skills', '')),
+                            score=score,
+                            explanation=explanation
+                        ))
         
         else:  # hybrid (default)
+            print("[API] Routing to HYBRID recommendations")
             recs = engine.hybrid_recommendations(
                 user_interests=profile.interests,
                 user_id=profile.user_id,

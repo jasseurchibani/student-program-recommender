@@ -1,0 +1,22 @@
+{
+  "model_type": "Hybrid (CF + Content-Based)",
+  "strategy": "Weighted Average",
+  "cf_weight": 0.9,
+  "content_weight": 0.09999999999999998,
+  "test_rmse": 1.0253126857295993,
+  "test_mae": 0.8292824810520284,
+  "comparison": {
+    "cf_only_rmse": 1.015112460545144,
+    "content_only_rmse": 2.0639046343870273,
+    "hybrid_rmse": 1.0253126857295993
+  },
+  "ranking_metrics": {
+    "ndcg@5": 0.5220517046696453,
+    "ndcg@10": 0.5220517046696453,
+    "ndcg@20": 0.5220517046696453,
+    "precision@5": 0.131,
+    "precision@10": 0.0655,
+    "precision@20": 0.03275
+  },
+  "trained_at": "2026-01-12T18:06:44.497491"
+}

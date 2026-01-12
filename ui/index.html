@@ -43,17 +43,26 @@
                 
                 <form id="recommendation-form">
                     <div class="form-group">
-                        <label for="interests">
-                            Your Interests
-                            <span class="hint">(comma-separated, e.g., technology, art, biology)</span>
+                        <label>
+                            Your Skills & Experience
+                            <span class="hint">(Select skill, choose experience level, then click + to add)</span>
                         </label>
-                        <input 
-                            type="text" 
-                            id="interests" 
-                            name="interests" 
-                            placeholder="technology, artificial intelligence, programming"
-                            required
-                        >
+                        <div class="skill-add-container">
+                            <select id="skill-select" class="skill-select">
+                                <option value="">Search or select a skill...</option>
+                            </select>
+                            <select id="experience-select" class="experience-select">
+                                <option value="1">🌱 Beginner</option>
+                                <option value="2">📚 Basic</option>
+                                <option value="3" selected>💼 Intermediate</option>
+                                <option value="4">🚀 Advanced</option>
+                                <option value="5">⭐ Expert</option>
+                            </select>
+                            <button type="button" id="add-skill-btn" class="btn-add-skill">+</button>
+                        </div>
+                        <div id="selected-skills" class="selected-skills-container"></div>
+                        <div class="skill-hint">💡 Add at least 2-3 skills to get better recommendations</div>
+                        <input type="hidden" id="interests" name="interests" required>
                     </div>
 
                     <div class="grades-grid">
@@ -101,6 +110,18 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="model_type">
+                            Recommendation Model
+                            <span class="hint">(Choose which algorithm to use)</span>
+                        </label>
+                        <select id="model_type" name="model_type">
+                            <option value="hybrid" selected>🔀 Hybrid</option>
+                            <option value="content-based">📚 Content-Based</option>
+                            <option value="collaborative">👥 Collaborative</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
                         <label for="num_recommendations">Number of Recommendations</label>
                         <select id="num_recommendations" name="k">
                             <option value="3">3 programs</option>
@@ -140,7 +161,7 @@
         </main>
 
         <footer>
-            <p>Powered by Hybrid Recommendation System (Content-Based + Collaborative Filtering)</p>
+            <p id="footer-text">Powered by Hybrid Recommendation System</p>
         </footer>
     </div>
 

@@ -111,6 +111,135 @@ select:focus {
     font-weight: 600;
 }
 
+/* Skill Add Container */
+.skill-add-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+.skill-select,
+.experience-select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.skill-select:focus,
+.experience-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.btn-add-skill {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.btn-add-skill:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.btn-add-skill:active {
+    transform: translateY(0);
+}
+
+.selected-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    min-height: 40px;
+}
+
+.no-skills-message {
+    width: 100%;
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 1.5rem;
+    background: var(--background);
+    border-radius: 8px;
+    font-style: italic;
+}
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s;
+}
+
+.skill-tag:hover {
+    transform: translateY(-2px);
+}
+
+.skill-tag-name {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.skill-tag-level {
+    font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.125rem 0.5rem;
+    border-radius: 10px;
+}
+
+.skill-tag-remove {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.skill-tag-remove:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.skill-hint {
+    margin-top: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
 /* Buttons */
 .btn {
     padding: 0.875rem 1.75rem;
@@ -341,6 +470,23 @@ select:focus {
     transform: translateY(-2px);
 }
 
+/* Model Info Banner */
+.model-info-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.model-info-banner strong {
+    font-weight: 600;
+}
+
 /* Utility Classes */
 .hidden {
     display: none !important;
@@ -373,5 +519,22 @@ footer {
     .recommendation-header {
         flex-direction: column;
         gap: 0.5rem;
+    }
+    
+    .skill-add-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn-add-skill {
+        width: 100%;
+        height: 45px;
+    }
+    
+    .test-buttons {
+        flex-direction: column;
+    }
+    
+    .btn-test {
+        min-width: 100%;
     }
 }
