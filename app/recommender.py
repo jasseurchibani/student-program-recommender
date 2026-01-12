@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from typing import List, Dict, Tuple
 from pathlib import Path
 
-from config import (
+from .config import (
     TFIDF_ARTIFACTS,
     COURSES_FILE_PROCESSED,
     CF_MODEL,

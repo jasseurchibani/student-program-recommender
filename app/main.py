@@ -10,14 +10,14 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 
-from models import (
+from .models import (
     UserProfile,
     RecommendationResponse,
     Recommendation,
     FeedbackRequest
 )
-from recommender import engine
-from config import FEEDBACK_LOG, DEFAULT_K
+from .recommender import engine
+from .config import FEEDBACK_LOG, DEFAULT_K
 
 # Initialize FastAPI app
 app = FastAPI(
