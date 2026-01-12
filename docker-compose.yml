@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: ml-recommender-api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount code for development (optional - remove for production)
+      - ./app:/app/app
+      - ./ui:/app/ui
+      # Mount data and models (read-only for production)
+      - ./data:/app/data:ro
+      - ./models:/app/models:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

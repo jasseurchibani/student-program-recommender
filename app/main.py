@@ -8,15 +8,16 @@ from typing import Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from fastapi.staticfiles import StaticFiles
 
-from .models import (
+from models import (
     UserProfile,
     RecommendationResponse,
     Recommendation,
     FeedbackRequest
 )
-from .recommender import engine
-from .config import FEEDBACK_LOG, DEFAULT_K
+from recommender import engine
+from config import FEEDBACK_LOG, DEFAULT_K
 
 # Initialize FastAPI app
 app = FastAPI(
@@ -33,6 +34,11 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Mount static files for UI
+ui_path = Path(__file__).parent.parent / "ui"
+if ui_path.exists():
+    app.mount("/ui", StaticFiles(directory=str(ui_path), html=True), name="ui")
 
 
 @app.on_event("startup")

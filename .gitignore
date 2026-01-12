@@ -1,3 +1,10 @@
 notes.txt
 PROJECT_PLAN.txt
 /.venv
+/app/__pycache__
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+/app/.venv
