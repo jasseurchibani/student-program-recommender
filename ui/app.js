@@ -186,9 +186,6 @@ form.addEventListener('submit', async (e) => {
     // Get form data
     const formData = new FormData(form);
     const interests = formData.get('interests');
-    const mathGrade = parseFloat(formData.get('math_grade'));
-    const scienceGrade = parseFloat(formData.get('science_grade'));
-    const languageGrade = parseFloat(formData.get('language_grade'));
     const k = parseInt(formData.get('k'));
     const modelType = formData.get('model_type') || 'hybrid';
     
@@ -205,10 +202,7 @@ form.addEventListener('submit', async (e) => {
     
     // Prepare request
     const requestBody = {
-        interests: interests,
-        math_grade: mathGrade,
-        science_grade: scienceGrade,
-        language_grade: languageGrade
+        interests: interests
     };
     
     // Show loading
@@ -255,6 +249,9 @@ form.addEventListener('submit', async (e) => {
 function displayRecommendations(recommendations, approach) {
     recommendationsContainer.innerHTML = '';
     
+    // Display user skills summary
+    displayUserSkills();
+    
     // Add model info banner
     const modelInfo = document.createElement('div');
     modelInfo.className = 'model-info-banner';
@@ -274,6 +271,36 @@ function displayRecommendations(recommendations, approach) {
     });
 }
 
+// Display user skills summary
+function displayUserSkills() {
+    const skillsDisplay = document.getElementById('user-skills-display');
+    if (!skillsDisplay || selectedSkills.length === 0) return;
+    
+    const experienceLabels = {
+        1: '🌱 Beginner',
+        2: '📚 Basic',
+        3: '💼 Intermediate',
+        4: '🚀 Advanced',
+        5: '⭐ Expert'
+    };
+    
+    const skillsHTML = selectedSkills.map(skill => {
+        return `<div class="user-skill-item">
+            <span class="user-skill-name">${skill.name}</span>
+            <span class="user-skill-level">${experienceLabels[skill.experience]}</span>
+        </div>`;
+    }).join('');
+    
+    skillsDisplay.innerHTML = `
+        <div class="user-skills-header">
+            <h3>📋 Your Skills Profile</h3>
+        </div>
+        <div class="user-skills-list">
+            ${skillsHTML}
+        </div>
+    `;
+}
+
 // Create recommendation card
 function createRecommendationCard(rec, rank) {
     const card = document.createElement('div');
@@ -284,6 +311,9 @@ function createRecommendationCard(rec, rank) {
 
     const shortDescription = truncateSentences(rec.description, 3);
     
+    const ratingStars = rec.course_rating ? '⭐'.repeat(Math.round(rec.course_rating)) : '';
+    const ratingText = rec.course_rating ? `${rec.course_rating}/5` : 'N/A';
+    
     card.innerHTML = `
         <div class="recommendation-header">
             <div>
@@ -291,6 +321,7 @@ function createRecommendationCard(rec, rank) {
                     #${rank} RECOMMENDATION
                 </div>
                 <h3 class="program-title">${rec.program_name}</h3>
+                ${rec.course_rating ? `<div style="font-size: 0.9rem; color: var(--warning); margin: 0.25rem 0;">${ratingStars} <span style="color: var(--text-secondary);">${ratingText}</span></div>` : ''}
                 <p class="program-description">${shortDescription}</p>
             </div>
             <div class="score-badge">
@@ -307,6 +338,9 @@ function createRecommendationCard(rec, rank) {
         </div>
         
         <div class="feedback-buttons">
+            ${rec.course_url ? `<a href="${rec.course_url}" target="_blank" class="feedback-btn" style="text-decoration: none; display: inline-block;">
+                🔗 View Course
+            </a>` : ''}
             <button class="feedback-btn" onclick="submitFeedback('${rec.program_id}', 'clicked', this)">
                 👍 Interested
             </button>
@@ -370,16 +404,11 @@ resetBtn.addEventListener('click', () => {
     resultsSection.classList.add('hidden');
     inputSection.classList.remove('hidden');
     form.reset();
-        // Clear selected skills
+    // Clear selected skills
     selectedSkills = [];
     renderSelectedSkills();
-        // Reset grade displays
-    gradeInputs.forEach(input => {
-        const display = input.nextElementSibling;
-        if (display && display.classList.contains('grade-display')) {
-            display.textContent = `${input.value}%`;
-        }
-    });
+    // Reset skill select options to show all skills
+    updateSkillSelectOptions();
 });
 
 // Show error
@@ -398,10 +427,7 @@ const testCases = {
             { name: 'machine learning', experience: 3 },
             { name: 'data analysis', experience: 3 },
             { name: 'algorithms', experience: 3 }
-        ],
-        math_grade: 92,
-        science_grade: 88,
-        language_grade: 75
+        ]
     },
     bio: {
         skills: [
@@ -409,10 +435,7 @@ const testCases = {
             { name: 'research', experience: 3 },
             { name: 'chemistry', experience: 3 },
             { name: 'genetics', experience: 2 }
-        ],
-        math_grade: 78,
-        science_grade: 95,
-        language_grade: 82
+        ]
     },
     business: {
         skills: [
@@ -420,10 +443,7 @@ const testCases = {
             { name: 'marketing', experience: 3 },
             { name: 'management', experience: 2 },
             { name: 'economics', experience: 3 }
-        ],
-        math_grade: 85,
-        science_grade: 72,
-        language_grade: 88
+        ]
     },
     arts: {
         skills: [
@@ -431,10 +451,7 @@ const testCases = {
             { name: 'adobe photoshop', experience: 4 },
             { name: 'creativity', experience: 4 },
             { name: 'visual communication', experience: 3 }
-        ],
-        math_grade: 70,
-        science_grade: 68,
-        language_grade: 94
+        ]
     },
     engineering: {
         skills: [
@@ -442,10 +459,7 @@ const testCases = {
             { name: 'mathematics', experience: 4 },
             { name: 'physics', experience: 4 },
             { name: 'problem solving', experience: 4 }
-        ],
-        math_grade: 93,
-        science_grade: 90,
-        language_grade: 72
+        ]
     }
 };
 
@@ -461,16 +475,6 @@ function fillTestCase(testName) {
     test.skills.forEach(skill => {
         addSkill(skill.name, skill.experience);
     });
-    
-    // Fill grades
-    document.getElementById('math_grade').value = test.math_grade;
-    document.getElementById('science_grade').value = test.science_grade;
-    document.getElementById('language_grade').value = test.language_grade;
-    
-    // Update displays
-    document.querySelector('#math_grade + .grade-display').textContent = `${test.math_grade}%`;
-    document.querySelector('#science_grade + .grade-display').textContent = `${test.science_grade}%`;
-    document.querySelector('#language_grade + .grade-display').textContent = `${test.language_grade}%`;
     
     // Scroll to form
     document.getElementById('input-section').scrollIntoView({ behavior: 'smooth', block: 'center' });

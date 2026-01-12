@@ -7,9 +7,9 @@ from pydantic import BaseModel, Field
 class UserProfile(BaseModel):
     """User profile for generating recommendations."""
     interests: str = Field(..., description="Comma-separated interests (e.g., 'technology, design, mathematics')")
-    math_grade: float = Field(..., ge=0, le=100, description="Mathematics grade (0-100)")
-    science_grade: float = Field(..., ge=0, le=100, description="Science grade (0-100)")
-    language_grade: float = Field(..., ge=0, le=100, description="Language grade (0-100)")
+    math_grade: Optional[float] = Field(None, ge=0, le=100, description="Mathematics grade (0-100)")
+    science_grade: Optional[float] = Field(None, ge=0, le=100, description="Science grade (0-100)")
+    language_grade: Optional[float] = Field(None, ge=0, le=100, description="Language grade (0-100)")
     user_id: Optional[str] = Field(None, description="Existing user ID (for returning users)")
 
 
@@ -21,6 +21,8 @@ class Recommendation(BaseModel):
     skills: str
     score: float
     explanation: str
+    course_url: Optional[str] = None
+    course_rating: Optional[float] = None
 
 
 class RecommendationResponse(BaseModel):

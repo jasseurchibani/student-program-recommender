@@ -397,7 +397,9 @@ class RecommendationEngine:
                 'description': program['description'],
                 'skills': program.get('tags_text', program.get('skills', '')),
                 'score': float(score),
-                'explanation': explanation
+                'explanation': explanation,
+                'course_url': program.get('url') if pd.notna(program.get('url')) else None,
+                'course_rating': float(program.get('rating')) if pd.notna(program.get('rating')) else None
             })
         
         return recommendations
